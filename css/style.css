@@ -1,0 +1,24 @@
+.header-title{
+    align-items: center;
+    height: 12rem;
+}
+
+.about{
+    background-color: honeydew;
+}
+
+.product{
+    background-color:burlywood;
+}
+
+.brands{
+    background-color: steelblue;
+}
+
+.contact-us{
+    background-color: white;
+}
+
+.form-client{
+    border: 1px solid red
+}
