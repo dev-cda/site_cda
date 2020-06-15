@@ -12,14 +12,14 @@
   </head>
   <body>
     <!-- HEADER -->
-    <section class="hero is-info is-fullheight">
+    <section class="hero is-fullheight">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <header class="navbar">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-                <img src="img/logo.png" alt="Logo da CDA-Natal" />
+                <img src="img/logo.png" alt="Logo da CDA-Natal"  width="160" height="100"/>
               </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroC">
                 <span></span>
@@ -29,17 +29,20 @@
             </div>
             <div id="navbarMenuHeroC" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  Home
+                <a class="navbar-item has-text-weight-semibold">
+                  Ínicio
                 </a>
-                <a class="navbar-item">
+                <a href="#sobre"class="navbar-item has-text-weight-semibold">
                   Sobre
                 </a>
-                <a class="navbar-item">
+                <a href="#produtos" class="navbar-item has-text-weight-semibold">
                   Produtos
                 </a>
-                <a class="navbar-item">
+                <a href="#contato" class="navbar-item has-text-weight-semibold">
                   Contato
+                </a>
+                <a href="#cliente" class="navbar-item has-text-weight-semibold">
+                  Seja nosso Cliente
                 </a>
               </div>
             </div>
@@ -49,19 +52,25 @@
 
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            Slide
+        <div class="container has-text-left">
+          <h1 class="title is-1 has-text-white">
+            Abasteça o seu mercado</br>
           </h1>
-          <h2 class="subtitle">
-            text
+          <h2 class="subtitle has-text-light">
+            Temos os melhores produtos e a 
+            melhor entrega </br>para deixar o seu mercado sempre abastecido. 
           </h2>
+          <a href="#cliente">
+            <button class="button is-warning has-text-black-ter has-text-weight-bold">
+              Seja nosso cliente
+           </button>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section about">
+    <section id="sobre" class="section about">
       <div class="container">
         <div class="columns is-mobile header-title">
           <div class="column title has-text-centered">
@@ -110,7 +119,7 @@
     </section>
 
     <!-- PRODUCT -->
-    <section class="section product">
+    <section id="produtos" class="section product">
       <div class="container">
         <div class="columns is-mobile header-title">
           <div class="column title has-text-centered">
@@ -271,7 +280,7 @@
     </section>
 
     <!-- contact us -->
-    <section class="section contact-us">
+    <section id="contato" class="section contact-us">
       <div class="container">
         <div class="columns is-mobile header-title">
           <div class="column title has-text-centered">
@@ -364,7 +373,7 @@
       <div class="container">
         <div class="columns is-mobile header-title">
           <div class="column title has-text-centered">
-            <h1 class="is-white">Seja nosso Cliente</h1>
+            <h1 id="cliente" class="is-white">Seja nosso Cliente</h1>
           </div>
         </div>
 
@@ -459,4 +468,5 @@
 
 
   </body>
+  <script src="js/main.js"></script>
 </html>
