@@ -21,7 +21,7 @@
           {% for category in site.categories %}
           {% assign path = "img/" | append:category.folder  %}
             {% if img.path contains path%}
-              <div class="column is-4 {{category.folder}}">
+              <div class="column is-2 {{category.folder}}">
                 <div class="card">
                   <div class="card-image">
                     <figure>
