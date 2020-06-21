@@ -49,16 +49,3 @@ a.navbar-item:hover::after{
     transform: scaleX(1);
     color:white;
 }
- 
-@media (min-width: 1024px) {
-    .about{
-       display: flex;
-       height: 50vh; 
-    }
-    .sub-title-about{
-        text-align: left;
-        
-    }
-
-
-}
