@@ -1,7 +1,3 @@
-.navbar-item img{
-    max-height: 80px;
-}
-
 .navbar-end {
     padding-right: 0px;
   }
@@ -15,10 +11,35 @@
     background-color: #0d0d0de0;
 }
 
+.sticky header{
+    transition: 0.6s;
+    background-color: royalblue !important;
+}
 
+.sticky .logo img{
+    justify-content: center;
+    max-width: 100px;
+}
+
+.navbar-burger{
+    width: 4.25rem;
+    color: white;
+}
+.navbar-burger span{
+    height: 2px;
+    width: 20px;
+}
 
 @media (min-width: 1024px) {
-    /* Customize the navbar, added underline */
+    .sticky header{
+        transition: 0.6s;
+        background-color: royalblue !important;
+    }
+
+    .sticky .logo img{
+        max-width: 120px;
+    }
+    
     .navbar-item{
         color: seashell;
     }
@@ -36,7 +57,7 @@
     }
     
     a.navbar-item:hover{
-        color: rgb(201, 201, 201);
+        color: rgb(255, 255, 255);
         background-color: #fff0;
     }
     
