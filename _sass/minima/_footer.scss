@@ -1,0 +1,10 @@
+.buttons{
+    justify-content: center;
+
+}
+
+@media (min-width: 1024px) {
+    .buttons{
+        justify-content: flex-start;  
+    }
+}
