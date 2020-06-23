@@ -7,4 +7,6 @@
 - name: Contato
   link: '/#contato'  
 - name: Seja nosso Cliente
-  link: '/#cliente'
+  link: '/#seja-cliente'
+- name: Trabalhe conosco
+  link: '/#trabalhe-conosco'
