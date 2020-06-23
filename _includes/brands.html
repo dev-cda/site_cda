@@ -35,7 +35,7 @@
     </div>
   </div>
 
-  <div class="columns is-mobile">
+  <!-- <div class="columns is-mobile">
     {% for img in site.static_files %} 
         {% if img.path contains 'brands' %}
         <div class="column is-2">
@@ -46,9 +46,30 @@
             </figure>
             </div>
         </div>
-    </div>
+        </div>
         {% endif %}
     {% endfor %}
+  </div> -->
+
+  <div class="columns is-mobile">
+      <div class="column">
+        <div class="marquee-content">
+          {% for img in site.static_files %} 
+            {% if img.path contains 'brands' %}
+            <div class="column is-2">
+              <div class="card">
+                  <div class="card-image">
+                  <figure>
+                      <img class="brands-img" src="{{ img.path | relative_url }}" alt="" />
+                  </figure>
+                  </div>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
   </div>
+  
 
 </section>

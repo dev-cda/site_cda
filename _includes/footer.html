@@ -1,3 +1,43 @@
 <footer>
+    <div class="section">
+
+    <div class="container">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+                <a class="title is-4" href="#">
+                    CDA-Natal
+                </a>
+            </div>
+          </div>
+          <div class="level-right">
+            {% for item in site.data.navigation %}
+                <a href="{{ site.baseurl }}{{ item.link }}" class="level-item">
+                    {{ item.name }}
+                </a>
+             {% endfor %}
+          </div>
+        </div>
+        <hr>
+        <div class="columns">
+          <div class="column">
+            <div class="buttons">
+                <a class="button" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="button" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="button" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+          </div>
+          <div class="column has-text-centered has-text-right-tablet">
+            <p class="subtitle is-6">&copy; 2020 CDA-Natal. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </footer>
 <script src="{{ "/assets/js/main.js" |  relative_url }}"></script>
