@@ -1,4 +1,4 @@
-<section id="produtos"class="section product">
+<section id="produtos" class="section product">
   <div class="container">
     <div class="columns is-mobile header-title">
       <div class="column">
@@ -9,39 +9,35 @@
     <div class="container">
       <div class="columns is-mobile">
         {% for title in site.categories %}
-          <div id="{{ title.folder }}" class="column has-text-centered category-header">
-            <h3 onclick="setcategory('{{ title.folder }}')">
-              {{ title.name }}
-            </h3>
-          </div>
+        <div id="{{ title.folder }}" class="column has-text-centered category-header">
+          <h3 onclick="setcategory('{{ title.folder }}')">
+            {{ title.name }}
+          </h3>
+        </div>
         {% endfor %}
       </div>
     </div>
     <div id="category">
       <div class="container">
-      <div class="columns is-multiline is-mobile">
-        <!-- automatico -->
-        {% for img in site.static_files %}
-          {% for category in site.categories %}
-          {% assign path = "img/" | append:category.folder  %}
-            {% if img.path contains path%}
-              <div class="column is-2 {{category.folder}}">
-                <div class="card">
-                  <div class="card-image">
-                    <figure>
-                      <img src="{{ img.path }}" alt="">
-                    </figure>
+        <div class="columns is-multiline is-mobile">
+          {% for img in site.static_files %}
+            {% for category in site.categories %}
+              {% assign path = "img/" | append:category.folder  %}
+              {% if img.path contains path%}
+                <div class="column is-2 {{category.folder}}">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure>
+                        <img src="{{ img.path }}" alt="">
+                      </figure>
+                    </div>
                   </div>
                 </div>
-              </div>
-            {% endif %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
+        </div>
       </div>
     </div>
-  
-    </div>
-   
-   
-  
-  </section>
+  </div>
+</section>
