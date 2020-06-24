@@ -22,19 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setcategory("bebidas");
 });
 
-// Brands
-// const root = document.documentElement;
-// const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
-//   "--marquee-elements-displayed"
-// );
-// const marqueeContent = document.querySelector("div.marquee-content");
-
-// root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-// for (let i = 0; i < marqueeElementsDisplayed; i++) {
-//   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-// }
-
 // Menu
 document.addEventListener("DOMContentLoaded", () => {
   let navbarBurger = document.querySelector(".navbar-burger");
@@ -105,7 +92,7 @@ window.addEventListener("scroll", function(){
   header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
+// Brands slide 
 window.onload = function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.swiper-container', {
