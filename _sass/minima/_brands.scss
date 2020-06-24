@@ -6,44 +6,13 @@
       background-color: rgb(204, 204, 204);
   }
 
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
 
-// :root {
-//   /* --marquee-elements: 11; */ /* defined with JavaScript */
-//   --marquee-elements-displayed: 6;
-//   --marquee-element-width: calc(100%/6);
-//   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
-// }
-
-// .marquee-content {
-//   display: flex;
-//   animation: scrolling var(--marquee-animation-duration) linear infinite;
-// }
-
-// .marquee-content:hover {
-//   cursor: pointer;
-//   animation-play-state: paused;
-// }
-
-// @keyframes scrolling {
-//   0% { transform: translateX(0); }
-//   100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-// }
-
-
-// @media (max-width: 768px) {
-//     :root{
-//         --marquee-elements-displayed: 3;
-//         --marquee-element-width: calc(99vw/3);
-//         --marquee-animation-duration: calc(var(--marquee-elements) * 1s);
-//     }
-
-//     @keyframes scrolling {
-//         0% { transform: translateX(0); }
-//         100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
-//       }
-    
-//     .brands-img{
-//         max-width: 100px;
-//     }
-
-// }
+  @media (max-width: 768px) {
+    .swiper-slide{
+      width: 70px !important;
+    }
+  }
