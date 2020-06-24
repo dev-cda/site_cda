@@ -5,7 +5,6 @@
         <h1 class="title is-2 has-text-centered is-white">Marcas que trabalhamos</h1>
       </div>
     </div>
-
     <div class="columns">
       <div class="column">
         <div class="box mb-6">
@@ -34,75 +33,18 @@
       </div>
     </div>
   </div>
-
 <!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-      <!-- Slides -->
-      {% for img in site.static_files %} 
-      {% if img.path contains 'brands' %}
-      <div class="swiper-slide">
-        <img src="{{ img.path | relative_url }}" alt="">
-      </div>
-      {% endif %}
-  {% endfor %}
-   
-      <!-- <div class="swiper-slide">
-        <img src="assets/img/brands/BETTANIN-1-705x705.png" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/img/brands/BETTANIN-1-705x705.png" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/img/brands/BETTANIN-1-705x705.png" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/img/brands/BETTANIN-1-705x705.png" alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="assets/img/brands/BETTANIN-1-705x705.png" alt="">
-      </div> -->
-
-     
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for img in site.static_files %} 
+          {% if img.path contains 'brands' %}
+            <div class="swiper-slide">
+              <img src="{{ img.path | relative_url }}" alt="">
+            </div>
+          {% endif %}
+        {% endfor %}     
+    </div>
   </div>
-</div>
-
-  <!-- <div class="columns is-mobile">
-    {% for img in site.static_files %} 
-        {% if img.path contains 'brands' %}
-        <div class="column is-2">
-        <div class="card">
-            <div class="card-image">
-            <figure>
-                <img src="{{ img.path | relative_url }}" alt="" />
-            </figure>
-            </div>
-        </div>
-        </div>
-        {% endif %}
-    {% endfor %}
-  </div> -->
-
-  <!-- <div class="columns is-mobile">
-      <div class="column">
-        <div class="marquee-content">
-          {% for img in site.static_files %} 
-            {% if img.path contains 'brands' %}
-            <div class="column is-2">
-              <div class="card">
-                  <div class="card-image">
-                  <figure>
-                      <img class="brands-img" src="{{ img.path | relative_url }}" alt="" />
-                  </figure>
-                  </div>
-              </div>
-            </div>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-  </div> -->
-  
-
 </section>

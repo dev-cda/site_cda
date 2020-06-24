@@ -96,8 +96,8 @@ window.addEventListener("scroll", function(){
 window.onload = function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 7,
+    spaceBetween: 20,
     freeMode: true,
     autoplay: {
       delay: 500,
