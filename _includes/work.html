@@ -1,18 +1,274 @@
 <section id="trabalhe-conosco" class="section">
-    <div class="container">
-      <div class="columns is-mobile header-title">
-        <div class="column">
-          <h1 class="title is-2 has-text-centered is-white">Trabalhe conosco</h1>
-          <p class="subtitle has-text-centered">Venha fazer parte da nossa equipe.</p>
-        </div>
-      </div>
-
-      <div class="columns forms-center">
-        <div class="column">
-            <iframe src="https://oxar.appetiteapex.com/ords/f?p=115:4" class="iframe-class" width="100%" height="700" frameborder="0">
-            </iframe>
-          </div>
-        </div>
+  <div class="container">
+    <div class="columns is-mobile header-title">
+      <div class="column">
+        <h1 class="title is-2 has-text-centered is-white">Trabalhe conosco</h1>
+        <p class="subtitle has-text-centered">Venha fazer parte da nossa equipe.</p>
       </div>
     </div>
-  </section>
+    <div class="columns forms-center">
+      <div class="column">
+        <form name="work" method="POST" data-netlify="true">
+          <div class="field-body">
+            <div class="field">
+              <label>Nome</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="nome" placeholder="Digite seu nome" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="email" name="email" placeholder="Digite seu e-mail" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>CPF</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="cpf" placeholder="Digite seu cpf" />
+              </p>
+            </div>
+          </div>
+          <div class="field-body pt-4">
+            <div class="field">
+              <label>Facebook</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="facebook" placeholder="Link para seu Facebook" />
+                <span class="icon is-small is-left">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>Linkedin</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="linkedin" placeholder="Link para seu Linkedin" />
+                <span class="icon is-small is-left">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>Instagram</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="instagram" placeholder="Link para seu Instagram" />
+                <span class="icon is-small is-left">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="field-body pt-4">
+            <div class="field">
+              <label>Telefone</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="telefone" placeholder="Digite seu número" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>Celular</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="celular" placeholder="Digite seu número" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-mobile-alt"></i>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="field-body pt-4">
+            <div class="field">
+              <label>CEP</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="cep" placeholder="Digite seu CEP" />
+              </p>
+            </div>
+            <div class="field">
+              <label>Endereço</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="endereco" placeholder="Digite seu Endereço" />
+              </p>
+            </div>
+            <div class="field">
+              <label>Cidade</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="cidade" placeholder="Digite sua cidade" />
+              </p>
+            </div>
+            <div class="field">
+              <label>Bairro</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="bairro" placeholder="Digite seu bairro" />
+              </p>
+            </div>
+            <div class="field">
+              <label>UF</label>
+              <p class="control is-expanded">
+                <input class="input" type="text" name="estado" placeholder="Digite a sigla do seu Estado" />
+              </p>
+            </div>
+          </div>
+          <div class="field-body pt-4">
+            <div class="field">
+              <label>Cargo pretendido</label>
+              <p class="control is-expanded">
+              <div class="select">
+                <select name="role[]">
+                  <option value="Auxiliar Contábil">Auxiliar Contábil</option>
+                  <option value="Auxiliar de Escrita Fiscal">Auxiliar de Escrita Fiscal</option>
+                  <option value="Assistente Financeiro">Assistente Financeiro</option>
+                  <option value="Analista de contas">Analista de contas</option>
+                  <option value="Analista de Crédito">Analista de Crédito</option>
+                  <option value="Analista contábil">Analista contábil</option>
+                  <option value="Analista de estoque">Analista de estoque</option>
+                  <option value="Analista de RH">Analista de RH</option>
+                  <option value="Analista de sistemas">Analista de sistemas</option>
+                  <option value="Analista de transporte">Analista de transporte</option>
+                  <option value="Armazenista">Armazenista</option>
+                  <option value="Assistente Administrativo">Assistente Administrativo</option>
+                  <option value="Assistente comercial">Assistente comercial</option>
+                  <option value="Assistente de Controladoria">Assistente de Controladoria</option>
+                  <option value="Assistente de Segurança de Trabalho">Assistente de Segurança de Trabalho</option>
+                  <option value="Assistente de TI">Assistente de TI</option>
+                  <option value="Assistente de Vendas">Assistente de Vendas</option>
+                  <option value="Assistente Logistica">Assistente Logistica</option>
+                  <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
+                  <option value="Auxiliar de estoque">Auxiliar de estoque</option>
+                  <option value="Auxiliar de limpeza">Auxiliar de limpeza</option>
+                  <option value="Auxiliar de Logística">Auxiliar de Logística</option>
+                  <option value="Chefe de cobrança">Chefe de cobrança</option>
+                  <option value="Classificador de avaria">Classificador de avaria</option>
+                  <option value="Conferente de Carga e descarga">Conferente de Carga e descarga</option>
+                  <option value="Consultor de Vendas">Consultor de Vendas</option>
+                  <option value="Controller">Controller</option>
+                  <option value="Coordenador de Logistica">Coordenador de Logistica</option>
+                  <option value="Coordenador de Merchandising">Coordenador de Merchandising</option>
+                  <option value="Coordenador de suporte de vendas">Coordenador de suporte de vendas</option>
+                  <option value="Demonstrador de Mercadorias">Demonstrador de Mercadorias</option>
+                  <option value="Encarregado de contas a pagar">Encarregado de contas a pagar</option>
+                  <option value="Encarregado de manutenção">Encarregado de manutenção</option>
+                  <option value="Engenheiro de Produção">Engenheiro de Produção</option>
+                  <option value="Entregador de Mercadoria">Entregador de Mercadoria</option>
+                  <option value="Estoquista">Estoquista</option>
+                  <option value="Faturista">Faturista</option>
+                  <option value="Gerente Administrativo">Gerente Administrativo</option>
+                  <option value="Gerente de Compras">Gerente de Compras</option>
+                  <option value="Gerente de Logistica">Gerente de Logistica</option>
+                  <option value="Gerente de vendas">Gerente de vendas</option>
+                  <option value="Gerente Financeiro">Gerente Financeiro</option>
+                  <option value="Gerente Ti">Gerente Ti</option>
+                  <option value="Gerente de Recursos Humanos">Gerente de Recursos Humanos</option>
+                  <option value="Gerente de Departamento Pessoa">Gerente de Departamento Pessoal</option>
+                  <option value="Lavador de Veiculos">Lavador de Veiculos</option>
+                  <option value="Manobrista">Manobrista</option>
+                  <option value="Motorista de Caminhão85">Motorista de Caminhão</option>
+                  <option value="Operador de Empilhadeira">Operador de Empilhadeira</option>
+                  <option value="Operador de Telemarketing">Operador de Telemarketing</option>
+                  <option value="Porteiro">Porteiro</option>
+                  <option value="Programador de Aplicativos">Programador de Aplicativos</option>
+                  <option value="Programador e controlador de materiais">Programador e controlador de materiais</option>
+                  <option value="Recepcionista">Recepcionista</option>
+                  <option value="Repositor de Merc - comércio">Repositor de Merc - comércio</option>
+                  <option value="Repositor de Mercadoria">Repositor de Mercadoria</option>
+                  <option value="Supervisor Administrativo">Supervisor Administrativo</option>
+                  <option value="Supervisor de Atendimento ao Cliente">Supervisor de Atendimento ao Cliente</option>
+                  <option value="Supervisor de Vendas">Supervisor de Vendas</option>
+                  <option value="Supervisor Operacional">Supervisor Operacional</option>
+                  <option value="Técnico de A. U. de Informática(helpesk)">Técnico de A. U. de Informática(helpesk)
+                  </option>
+                  <option value="Técnico em Seguranca do Trabalho">Técnico em Seguranca do Trabalho</option>
+                  <option value="Técnico em Seguranca do Trabalho">Técnico em Seguranca do Trabalho</option>
+                  <option value="Vendedor Atacadista">Vendedor Atacadista</option>
+                  <option value="Vendedor Comercial">Vendedor Comercial</option>
+                  <option value="Engenheiro de produção">Engenheiro de produção</option>
+                </select>
+              </div>
+              </p>
+            </div>
+            <div class="field">
+              <label>Pretenção salarial</label>
+              <p class="control is-expanded">
+              <div class="select">
+                <select name="role[]">
+                  <option value="Entre R$1.000,00 a R$2.000,00">Entre R$1.000,00 a R$2.000,00</option>
+                  <option value="Entre R$2.001,00 a R$3.000,00">Entre R$2.001,00 a R$3.000,00</option>
+                  <option value="Entre R$3.001,00 a R$4.000,00">Entre R$3.001,00 a R$4.000,00</option>
+                  <option value="Entre R$4.001,00 a R$5.000,00">Entre R$4.001,00 a R$5.000,00</option>
+                  <option value="Acima de R$5.000,00">Acima de R$5.000,00</option>
+                </select>
+              </div>
+              </p>
+            </div>
+            <div class="field">
+              <label>Está empregado atualmente?</label>
+              <p class="control is-expanded">
+              <div class="select">
+                <select name="role[]">
+                  <option value="Não">Não</option>
+                  <option value="Sim">Sim</option>
+                </select>
+              </div>
+              </p>
+            </div>
+            <div class="field">
+              <label>Pessoa com deficiência</label>
+              <p class="control is-expanded">
+              <div class="select">
+                <select name="role[]">
+                  <option value="Não tenho deficiência">Não tenho deficiência</option>
+                  <option value="Reabilitado pelo INSS">Reabilitado pelo INSS</option>
+                  <option value="Tenho deficiência">Tenho deficiência</option>
+                </select>
+              </div>
+              </p>
+            </div>
+          </div>
+          <div class="field-body pt-4">
+            <div class="field">
+              <label>Data de nascimento</label>
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="nascimento" placeholder="Digite sua data de nascimento" />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label>Currículo em PDF</label>
+              <div id="file-js-example" class="file has-name is-left">
+                <label class="file-label">
+                  <input class="file-input" type="file" name="resume">
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Selecione o arquivo
+                    </span>
+                  </span>
+                  <span class="file-name">
+                    meu_curriculo.pdf
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="field is-grouped pt-4">
+            <div class="control">
+              <button type="submit" class="button is-link">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
