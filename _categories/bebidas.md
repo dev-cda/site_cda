@@ -1,4 +1,0 @@
----
-name: Bebidas
-folder: bebidas
----

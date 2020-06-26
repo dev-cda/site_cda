@@ -19,7 +19,7 @@ function setcategory(category) {
   tag_category.classList.add("category-active");
 }
 document.addEventListener("DOMContentLoaded", function () {
-  setcategory("bebidas");
+  setcategory("alimentos-bebidas");
 });
 
 // Menu

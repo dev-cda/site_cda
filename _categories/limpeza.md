@@ -1,4 +1,0 @@
----
-name: Limpeza
-folder: limpeza
----

@@ -7,10 +7,10 @@
     </div>
 
     <div class="container">
-      <div class="columns is-mobile">
+      <div class="columns is-mobile is-centered">
         {% for title in site.categories %}
         <div id="{{ title.folder }}" class="column has-text-centered category-header">
-          <h3 onclick="setcategory('{{ title.folder }}')">
+          <h3 class="title-category" onclick="setcategory('{{ title.folder }}')">
             {{ title.name }}
           </h3>
         </div>
@@ -19,7 +19,7 @@
     </div>
     <div id="category">
       <div class="container">
-        <div class="columns is-multiline is-mobile">
+        <div class="columns is-multiline is-mobile pt-5">
           {% for img in site.static_files %}
             {% for category in site.categories %}
               {% assign path = "img/" | append:category.folder  %}
