@@ -1,4 +1,4 @@
-<section id="inicio"class="hero is-fullheight">
+<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ page.header.img | relative_url }}')">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
     {%- include nav.html -%}
@@ -8,15 +8,14 @@
   <div class="hero-body">
     <div class="container has-text-left">
       <h1 class="title is-1 has-text-white">
-        Abasteça o seu mercado</br>
+        {{ page.header.title}}
       </h1>
       <h2 class=" has-text-light">
-        Temos os melhores produtos e a 
-        melhor entrega </br>para deixar o seu mercado sempre abastecido. 
+        {{ page.header.subtitle}}
       </h2>
       <a href="#cliente">
         <button class="button is-warning has-text-black-ter has-text-weight-bold">
-          Seja nosso cliente
+          {{ page.header.button}}
        </button>
       </a>
     </div>

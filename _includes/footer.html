@@ -1,12 +1,11 @@
 <footer>
     <div class="section">
-
     <div class="container">
         <div class="level">
           <div class="level-left">
             <div class="level-item">
                 <a class="title is-4" href="#">
-                    CDA-Natal
+                  {{ page.footer.title }}
                 </a>
             </div>
           </div>
@@ -22,19 +21,17 @@
         <div class="columns">
           <div class="column">
             <div class="buttons">
-                <a class="button" href="#">
-                    <i class="fab fa-facebook-f"></i>
+              {% for item in page.footer.social%}
+                <a class="button" href="{{ item.link }}">
+                    <i class="fab {{ item.icon }}"></i>
                 </a>
-                <a class="button" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="button" href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
+              {% endfor %}
             </div>
           </div>
           <div class="column has-text-centered has-text-right-tablet">
-            <p class="subtitle is-6">&copy; 2020 CDA-Natal. Todos os direitos reservados.</p>
+            <p class="subtitle is-6">
+              {{ page.footer.copyright }}
+            </p>
           </div>
         </div>
       </div>

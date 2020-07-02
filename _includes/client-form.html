@@ -3,7 +3,7 @@
     <div class="columns is-mobile header-title">
       <div class="column">
         <h1 class="title is-2 has-text-centered is-white">
-          Seja nosso cliente
+          {{ page.client.title }}
         </h1>
       </div>
     </div>
@@ -11,12 +11,10 @@
     <div class="columns">
       <div class="column">
         <p class="title is-5">
-          Antecipe seu processo de cadastro com nossa Equipe de Vendas
+          {{ page.client.subtitle }}
         </p>
         <p>
-          Preencha o arquivo deste link e envie para nós. <br />
-          Horários de atendimento: <br />
-          Segunda – Sexta, 8h – 18h <br />
+          {{ page.client.text | markdownify }}
         </p>
       </div>
 

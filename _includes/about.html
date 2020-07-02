@@ -2,47 +2,26 @@
     <div class="container">
       <div class="columns">
         <div class="column">
-          <h1 class="title is-2 has-text-centered is-white has-text-weight-bold pb-3">CDA Distribuidora</h1>
+          <h1 class="title is-2 has-text-centered is-white has-text-weight-bold pb-3">
+            {{ page.about.title}}
+          </h1>
           <p class="subtitle has-text-centered pb-6">
-            A CDA – Central de Distribuição Azevedo LTDA – é uma empresa
-            genuinamente Nordestina, que está no mercado desde 1998.
+            {{ page.about.subtitle }}
           </p>
         </div>
       </div>
-
       <div class="columns is-vcentered">
-        <div class="column has-text-centered">
-          <i class="fas fa-map-marked-alt fa-5x"></i>
-        </div>
-        <div class="column">
-            <p class="is-size-5 has-text-weight-bold sub-title-about">Clintes</p>
-            <p class="">Presente em todo o estado do
-              Rio Grande do Norte e com mais de 11.000 clientes cadastrados.
-            </p>
-        </div>
-
-        <div class="column has-text-centered">
-          <i class="fas fa-people-carry fa-5x"></i>
-        </div>
-        <div class="column">
-          <p class="is-size-5 has-text-weight-bold sub-title-about">Fornecimento</p>
-          <p class="">
-            Acesso rápido e fácil, favorecendo uma ótima
-            logística de entrega.
-          </p>
-        </div>
-        
-
-        <div class="column has-text-centered">
-          <i class="fas fa-users fa-5x"></i>
-        </div>
-        <div class="column">
-            <p class="is-size-5 has-text-weight-bold sub-title-about">Equipe</p>
-            <p class="">
-              Time de marketing para auxiliar 
-              os clientes e fornecedores.
-            </p>
-        </div>
+        {% for service in page.about.services %}
+          <div class="column has-text-centered">
+            <i class="fas {{ service.icon }} fa-5x"></i>
+          </div>
+          <div class="column">
+              <p class="is-size-5 has-text-weight-bold sub-title-about">{{ service.title }}</p>
+              <p class="">
+                {{ service.text}}
+              </p>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </section>
