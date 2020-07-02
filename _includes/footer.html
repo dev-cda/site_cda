@@ -5,7 +5,7 @@
           <div class="level-left">
             <div class="level-item">
                 <a class="title is-4" href="#">
-                  {{ page.footer.title }}
+                  {{ site.data.footer.title }}
                 </a>
             </div>
           </div>
@@ -21,7 +21,7 @@
         <div class="columns">
           <div class="column">
             <div class="buttons">
-              {% for item in page.footer.social%}
+              {% for item in site.data.footer.social%}
                 <a class="button" href="{{ item.link }}">
                     <i class="fab {{ item.icon }}"></i>
                 </a>
@@ -30,7 +30,7 @@
           </div>
           <div class="column has-text-centered has-text-right-tablet">
             <p class="subtitle is-6">
-              {{ page.footer.copyright }}
+              {{ site.data.footer.copyright }}
             </p>
           </div>
         </div>

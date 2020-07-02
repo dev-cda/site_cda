@@ -3,15 +3,15 @@
       <div class="columns">
         <div class="column">
           <h1 class="title is-2 has-text-centered is-white has-text-weight-bold pb-3">
-            {{ page.about.title}}
+            {{ site.data.about.title}}
           </h1>
           <p class="subtitle has-text-centered pb-6">
-            {{ page.about.subtitle }}
+            {{ site.data.about.subtitle }}
           </p>
         </div>
       </div>
       <div class="columns is-vcentered">
-        {% for service in page.about.services %}
+        {% for service in site.data.about.services %}
           <div class="column has-text-centered">
             <i class="fas {{ service.icon }} fa-5x"></i>
           </div>

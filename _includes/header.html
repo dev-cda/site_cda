@@ -1,4 +1,4 @@
-<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ page.header.img | relative_url }}')">
+<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
     {%- include nav.html -%}
@@ -8,14 +8,14 @@
   <div class="hero-body">
     <div class="container has-text-left">
       <h1 class="title is-1 has-text-white">
-        {{ page.header.title}}
+        {{ site.data.header.title}}
       </h1>
       <h2 class=" has-text-light">
-        {{ page.header.subtitle}}
+        {{ site.data.header.subtitle}}
       </h2>
       <a href="#cliente">
         <button class="button is-warning has-text-black-ter has-text-weight-bold">
-          {{ page.header.button}}
+          {{ site.data.header.button}}
        </button>
       </a>
     </div>
