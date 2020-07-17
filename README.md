@@ -1,18 +1,18 @@
 # CDA-website
 
-## Install jekyll:
+## Instalando o Jekyll:
 
-Before we install Jekyll, we need to make sure we 
-have all the required dependencies.
+Antes de instalarmos o Jekyll, precisamos instalar
+todas as dependências necessárias.
 
 ```bash
 sudo apt-get install ruby-full build-essential
 ```
 
- The following commands will add environment 
- variables to your `~/.bashrc` file to configure 
- the gem installation path. Run them now:
-
+Os comandos abaixo vai adicionar variáveis de ambiente
+ao seu arquivo `~/.bashrc` para configurar
+o caminho de instalação da gem. Assim você não precisar
+rodar como superusuário(root).
 
  ```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
@@ -21,21 +21,21 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Finally, install Jekyll:
+Por fim, vamos instalar o Jekyll:
 
 ```
 gem install jekyll bundler
 ```
 
-## Run project
+## Rodando o projeto
 
-Install project dependencies.
+Instale as dependências do projeto:
 
 ```
 bundle install
 ```
 
-Run site:
+Rodando o site:
 
 ```
 bundle exec jekyll serve -l
