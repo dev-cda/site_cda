@@ -1,24 +1,19 @@
 ---
 layout: default
 ---
+<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
+  <div class="hero-head">
+    {%- include nav.html -%}
+  </div>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 has-text-white">
+        404
+      </h1>
+      <h2 class="subtitle has-text-white">
+        Página não encontrada.
+      </h2>
+    </div>
+  </div>
+</section>
