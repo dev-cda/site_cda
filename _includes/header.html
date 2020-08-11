@@ -1,4 +1,28 @@
 <section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
+  <!-- <div class="swiper-container-header">
+    <div class="swiper-wrapper-header">
+      {% for slide in site.slides %}
+      {% if slide.status == "active"%}
+      <div class="swiper-slide" style="background-image: url('{{ slide.img | relative_url }}')">
+        <!-- <div class="container">
+                        <div class="carousel-caption text-center">
+                            <h1>{{ slide.title }}</h1>
+                            <p>{{ slide.content }}</p>
+                        </div>
+                    </div>
+                </div> -->
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>>
+  </div> -->
+
+
+
+
+
   <div class="hero-head">
     {%- include nav.html -%}
   </div>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns is-mobile header-title">
       <div class="column">
-        <h1 class="title is-2 has-text-centered is-white">
+        <h1 class="title is-2 has-text-centered has-text-white">
           {{ site.data.product.title }}
         </h1>
       </div>
@@ -12,7 +12,7 @@
       <div class="columns is-mobile is-centered">
         {% for title in site.categories %}
         <div id="{{ title.folder }}" class="column has-text-centered category-header">
-          <h3 class="title-category" onclick="setcategory('{{ title.folder }}')">
+          <h3 class="title-categor has-text-white" onclick="setcategory('{{ title.folder }}')">
             {{ title.name }}
           </h3>
         </div>
