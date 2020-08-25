@@ -1,28 +1,5 @@
-<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
-  <!-- <div class="swiper-container-header">
-    <div class="swiper-wrapper-header">
-      {% for slide in site.slides %}
-      {% if slide.status == "active"%}
-      <div class="swiper-slide" style="background-image: url('{{ slide.img | relative_url }}')">
-        <!-- <div class="container">
-                        <div class="carousel-caption text-center">
-                            <h1>{{ slide.title }}</h1>
-                            <p>{{ slide.content }}</p>
-                        </div>
-                    </div>
-                </div> -->
-        {% endif %}
-        {% endfor %}
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>>
-  </div> -->
-
-
-
-
-
+<section id="inicio" class="hero is-fullheight"
+  style="background-image: url('{{ site.data.header.img | relative_url }}')">
   <div class="hero-head">
     {%- include nav.html -%}
   </div>
@@ -31,13 +8,13 @@
       <h1 class="title is-1 has-text-white">
         {{ site.data.header.title}}
       </h1>
-      <h2 class=" has-text-light">
+      <h2 class=" has-text-light pb-3">
         {{ site.data.header.subtitle}}
       </h2>
       <a href="#cliente">
         <button class="button is-warning has-text-black-ter has-text-weight-bold">
           {{ site.data.header.button}}
-       </button>
+        </button>
       </a>
     </div>
   </div>
