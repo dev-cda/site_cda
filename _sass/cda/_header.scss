@@ -11,8 +11,23 @@ html {
     text-align: center;
 }
 
-.hero{
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+
+.is-full{
+    height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+    
+    .is-full{
+        height: 50vh;
+    }
+    .slider-navigation-next{
+        margin: 10px;
+    }
+    
+    .slider-navigation-previous{
+        margin: 10px;
+    }
+
 }
