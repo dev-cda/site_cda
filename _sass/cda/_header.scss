@@ -11,23 +11,24 @@ html {
     text-align: center;
 }
 
+.slider-navigation-next{
+    margin: 10px;
+}
+
+.slider-navigation-previous{
+    margin: 10px;
+}
 
 .is-full{
     height: 100vh;
 }
-
+.has-background{
+    height: 100vh;
+}
 
 @media (max-width: 768px) {
-    
     .is-full{
         height: 50vh;
     }
-    .slider-navigation-next{
-        margin: 10px;
-    }
-    
-    .slider-navigation-previous{
-        margin: 10px;
-    }
-
+  
 }
