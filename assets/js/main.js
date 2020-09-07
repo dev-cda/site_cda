@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Scroll-down
 window.addEventListener("scroll", function(){
-  var header = this.document.querySelector(".hero-head");
+  var header = this.document.querySelector(".hero");
   header.classList.toggle("sticky", window.scrollY > 0);
 })
 
@@ -118,3 +118,23 @@ fileInput.onchange = () => {
     fileName.textContent = fileInput.files[0].name;
   }
 }
+
+// header slide
+function ready(handler) {
+  if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
+    handler();
+  } else {
+    document.addEventListener('DOMContentLoaded', handler, false);
+  }
+}
+
+ready(function () {
+  bulmaCarousel.attach('.hero-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    pagination: true,
+    effect: 'fade',
+    loop: true,
+    autoplay: true
+  });
+});
