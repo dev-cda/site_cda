@@ -1,19 +1,21 @@
-<section class="hero is-full has-carousel">
+<section id="inicio" class="hero is-full has-carousel">
   <div class="hero-carousel">
-    <div class='has-background is-active'>
-      <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" />
-    </div>
-    <div class='has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" />
-    </div>
-    <div class='has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" />
-    </div>
-    <div class='has-background'>
-      <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" />
-    </div>
+    {% for slide in site.slides %}
+      <div class='has-background is-active'>
+        <img class="is-background" src="{{ slide.img | relative_url }}" alt="" />
+        <div class="carousel-caption has-text-left">
+          <h1 class="title is-1 has-text-white ">{{ slide.title }}</h1 class="title">
+          <p>{{ slide.content | markdownify }}</p>
+          {% if slide.button %}
+            <a href="#produtos" class="pt-2">
+              <button class="button is-warning has-text-black-ter has-text-weight-bold">
+                {{ slide.button }}
+              </button>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
   </div>
   {%- include nav.html -%}
-  <div class="">
-  </div>
 </section>
