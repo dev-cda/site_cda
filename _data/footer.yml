@@ -1,10 +1,8 @@
 title: CDA-Natal
 social:
-  - icon: fa-facebook-f
+  - icon: fa-facebook-square fa-lg
     link: #
-  - icon: fa-instagram
-    link: #
-  - icon: fa-twitter
+  - icon: fa-instagram fa-lg
     link: #
 copyright: >-
     &copy; 2020 CDA-Natal. Todos os direitos reservados.

@@ -17,6 +17,13 @@
                     {{ item.name }}
                 </a>
             {% endfor %}
+            <div class="buttons has-background-blue pl-2">
+              {% for item in site.data.footer.social%}
+                <a class="button" href="{{ item.link }}">
+                    <i class="fab {{ item.icon }}"></i>
+                </a>
+              {% endfor %}
+            </div>
         </div>
       </div>
     </div>

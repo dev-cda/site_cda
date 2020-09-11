@@ -31,6 +31,23 @@
     width: 20px;
 }
 
+.buttons .button{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    padding: 0px 0px 0px 10px ;    
+}
+.button.is-hovered, .button:hover{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(241, 240, 240);
+
+}
+
+.has-background-blue{
+    background-color: #20376c !important;
+}
+
 @media (min-width: 1024px) {
     .sticky header{
         transition: 0.6s;
@@ -66,5 +83,8 @@
         transform: scaleX(1);
         color:white;
     }
- 
+
+    .has-background-blue{
+        background-color: transparent !important;
+    }    
 }
