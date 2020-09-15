@@ -3,8 +3,10 @@
     {% for slide in site.slides %}
       <div class='has-background is-active'>
         <img class="is-background" src="{{ slide.img | relative_url }}" alt="" />
-        <div class="carousel-caption has-text-left">
-          <h1 class="title is-1 has-text-white ">{{ slide.title }}</h1 class="title">
+        <div class="carousel-caption">
+          {% if slide.title %}
+            <h1 class="title is-1 has-text-white">{{ slide.title }}</h1>
+          {%  endif %}
           <p>{{ slide.content | markdownify }}</p>
           {% if slide.button %}
             <a href="#produtos" class="pt-2">

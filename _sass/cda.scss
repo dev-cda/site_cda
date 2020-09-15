@@ -1,11 +1,8 @@
 @charset "utf-8";
 
-
-
 .is-blue{
   color: #20376c;
 }
-
 
 @import
   "cda/navbar",
@@ -14,6 +11,7 @@
   "cda/product",
   "cda/brands",
   "cda/client",
-  "cda/footer"
+  "cda/footer",
+  "cda/contact"
 
 ;

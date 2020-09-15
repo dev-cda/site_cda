@@ -1,14 +1,17 @@
 title: CDA Distribuidora
 subtitle: >-
-    A CDA – Central de Distribuição Azevedo LTDA – é uma 
-    empresa genuinamente Nordestina, que está no mercado 
-    desde 1998.
+  Somos uma empresa potiguar que trabalha há mais de 20 anos para garantir o 
+  crescimento do nosso cliente. Nossa missão é levar até você, produtos de
+  qualidade e relevância nacional, garantindo o melhor do mercado, desde 1998. 
+  Temos o compromisso de atender as necessidades do pequeno, médio e grande
+  varejo com agilidade e eficiência dos mais de 20 anos de experiência de
+  mercado, assim facilitando a conexão entre indústria e consumidor final.
 services:
-  - title: Clintes
+  - title: Clientes
     text: >-
         Presente em todo o estado do Rio Grande do Norte e 
         com mais de 11.000 clientes cadastrados. 
-    icon: fa-map-marked-alt
+    icon: fas fa-handshake
   - title: Fornecimento
     text: >-
         Acesso rápido e fácil,favorecendo uma ótima

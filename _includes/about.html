@@ -13,11 +13,11 @@
       <div class="columns is-vcentered">
         {% for service in site.data.about.services %}
           <div class="column has-text-centered">
-            <i class="fas {{ service.icon }} fa-5x"></i>
+            <i class="fas {{ service.icon }} fa-5x icon-blue"></i>
           </div>
           <div class="column">
               <p class="is-size-5 has-text-weight-bold sub-title-about">{{ service.title }}</p>
-              <p class="">
+              <p class="service-text">
                 {{ service.text}}
               </p>
           </div>

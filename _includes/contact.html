@@ -2,7 +2,7 @@
     <div class="container">
       <div class="columns is-mobile header-title">
         <div class="column">
-          <h1 class="title is-2 has-text-centered is-white">
+          <h1 class="title is-2 has-text-centered has-text-white">
             {{ site.data.contact.title }}
           </h1>
         </div>
@@ -10,14 +10,14 @@
 
       <div class="columns">
         <div class="column">
-          <p class="title is-5 has-text-centered">
+          <p class="title is-5 has-text-centered has-text-white">
             {{ site.data.contact.where }}
           </p>
           <div class="box">
           </div>
         </div>
         <div class="column">
-          <p class="title is-5  has-text-centered">
+          <p class="title is-5  has-text-centered has-text-white">
             {{ site.data.contact.text }}
           </p>
 
@@ -25,7 +25,7 @@
         <form name="contact" method="POST" data-netlify="true">
 
           <div class="field">
-            <label class="label">Nome</label>
+            <label class="label has-text-white">Nome</label>
             <div class="control has-icons-left">
               <input class="input" type="text"  name="name" placeholder="Digite seu nome">
               <span class="icon is-small is-left">
@@ -35,7 +35,7 @@
           </div>
 
           <div class="field">
-            <label class="label">Email</label>
+            <label class="label has-text-white">Email</label>
             <div class="control has-icons-left">
               <input class="input" type="email"  name="email" placeholder="Digite seu email">
               <span class="icon is-small is-left">
@@ -45,7 +45,7 @@
           </div>
           
           <div class="field">
-            <label class="label">Telefone</label>
+            <label class="label has-text-white">Telefone</label>
             <div class="field-body">
               <div class="field is-expanded">
                 <div class="field has-addons">
@@ -56,14 +56,14 @@
                     </span>
                   </p>
                 </div>
-                <p class="help">Coloque assim o número. Exemplo: 84-9923-1632</p>
+                <p class="help has-text-white">Coloque assim o número. Exemplo: 84-9923-1632</p>
               </div>
             </div>
           </div>
         
           
           <div class="field">
-            <label class="label">Assunto</label>
+            <label class="label has-text-white">Assunto</label>
             <div class="control">
               <div class="select">
                 <select name="role[]">
@@ -76,7 +76,7 @@
           </div>
           
           <div class="field">
-            <label class="label">Mensagem</label>
+            <label class="label has-text-white">Mensagem</label>
             <div class="control">
               <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
             </div>

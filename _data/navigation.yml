@@ -4,9 +4,9 @@
   link: '/#sobre'
 - name: Produtos
   link: '/#produtos'
-- name: Contato
-  link: '/#contato'  
 - name: Seja nosso cliente
   link: '/#seja-cliente'
 - name: Trabalhe conosco
   link: '/#trabalhe-conosco'
+- name: Contato
+  link: '/#contato'  

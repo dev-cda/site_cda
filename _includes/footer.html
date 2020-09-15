@@ -4,14 +4,14 @@
         <div class="level">
           <div class="level-left">
             <div class="level-item">
-                <a class="title is-4" href="#">
+                <a class="title is-4 is-blue" href="#">
                   {{ site.data.footer.title }}
                 </a>
             </div>
           </div>
           <div class="level-right">
             {% for item in site.data.navigation %}
-                <a href="{{ site.baseurl }}{{ item.link }}" class="level-item">
+                <a href="{{ site.baseurl }}{{ item.link }}" class="level-item is-blue">
                     {{ item.name }}
                 </a>
              {% endfor %}
@@ -23,13 +23,13 @@
             <div class="buttons">
               {% for item in site.data.footer.social%}
                 <a class="button" href="{{ item.link }}">
-                    <i class="fab {{ item.icon }}"></i>
+                    <i class="fab {{ item.icon }} is-blue"></i>
                 </a>
               {% endfor %}
             </div>
           </div>
           <div class="column has-text-centered has-text-right-tablet">
-            <p class="subtitle is-6">
+            <p class="subtitle is-6 is-blue">
               {{ site.data.footer.copyright }}
             </p>
           </div>
