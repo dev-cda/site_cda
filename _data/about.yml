@@ -1,11 +1,11 @@
 title: CDA Distribuidora
 subtitle: >-
   Somos uma empresa potiguar que trabalha há mais de 20 anos para garantir o 
-  crescimento do nosso cliente. Nossa missão é levar até você, produtos de
-  qualidade e relevância nacional, garantindo o melhor do mercado, desde 1998. 
+  crescimento do nosso cliente. Nossa missão é levar: produtos de
+  qualidade de relevância nacional, garantindo o melhor do mercado, desde 1998. 
   Temos o compromisso de atender as necessidades do pequeno, médio e grande
-  varejo com agilidade e eficiência dos mais de 20 anos de experiência de
-  mercado, assim facilitando a conexão entre indústria e consumidor final.
+  varejo com agilidade e eficiência, assim facilitando a conexão entre 
+  indústria e consumidor final.
 services:
   - title: Clientes
     text: >-
@@ -14,7 +14,7 @@ services:
     icon: fas fa-handshake
   - title: Fornecimento
     text: >-
-        Acesso rápido e fácil,favorecendo uma ótima
+        Acesso rápido e fácil, favorecendo uma ótima
         logística de entrega. 
     icon: fa-people-carry
   - title: Equipe
