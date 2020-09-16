@@ -28,6 +28,10 @@
     color: #20376c;
 }
 
+.card{
+    background-color: transparent;
+    box-shadow: none;
+}
 
 
 
@@ -36,6 +40,10 @@
     
     #category .columns.is-mobile > .column.is-2{
        width: 33%;    
+    }
+    .product .header-title{
+        align-items: left;
+        height: 8rem;
     }
 
 }
