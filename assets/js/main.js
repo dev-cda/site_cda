@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.onload = function () {
   //initialize swiper when document ready
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 7,
+    slidesPerView: screen.width < 768 ? 2.75:7,
     spaceBetween: 20,
     freeMode: true,
     autoplay: {
