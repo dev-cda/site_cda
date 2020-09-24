@@ -62,12 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Scroll-down
-window.addEventListener("scroll", function(){
-  var header = this.document.querySelector(".hero");
-  header.classList.toggle("sticky", window.scrollY > 0);
-})
-
 // Brands slide 
 window.onload = function () {
   //initialize swiper when document ready
