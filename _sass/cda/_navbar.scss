@@ -47,6 +47,12 @@
     background-color: #20376c !important;
 }
 
+.navbar-end a:nth-child(-n+5)::after{
+    content: '';
+    border-top: solid 2px #20376c;
+    display: block;
+}
+
 @media (min-width: 1024px) {
     .sticky .logo img{
         max-width: 120px;
