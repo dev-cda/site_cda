@@ -1,4 +1,3 @@
 ---
-title: ""
-img: "assets/img/slide-2.png"
+img: "assets/img/slide-1.png"
 ---
