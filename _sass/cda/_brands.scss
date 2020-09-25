@@ -1,18 +1,24 @@
-.is-horizontal-center {
-    justify-content: center;
+.brands{
+  padding-right: -500px;
+  background-color: #f6f9f9;
+}
+#brands-slider .slider-item{
+  width: 190px !important;
+}
+
+.brands-image{
+  height:auto;
+  width:auto;
+}
+
+@media (max-width: 768px){
+  .brands-image{
+    height: 120px;
+    width: 120px;
   }
 
-  .brands{
-      background-color:#f6f9f9;
+  #brands-slider .slider-item{
+    width: 130px !important;
   }
-
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (max-width: 768px) {
-    .swiper-slide{
-      width: 100px !important;
-    }
-  }
+  
+}

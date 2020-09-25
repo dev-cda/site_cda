@@ -1,13 +1,15 @@
 <section class="section brands">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-          {% for img in site.static_files %} 
-          {% if img.path contains 'brands' %}
-            <div class="swiper-slide">
-              <img src="{{ img.path | relative_url }}" alt="">
-            </div>
-          {% endif %}
-        {% endfor %}     
-    </div>
+  <div id="brands-slider">
+    {% for img in site.static_files %}
+      {% if img.path contains 'brands' %}
+        <div class="card">
+          <div class="card-image">
+            <figure class="brands-image">
+              <img src="{{ img.path | relative_url }}">
+            </figure>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>

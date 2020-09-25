@@ -62,24 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Brands slide 
-window.onload = function () {
-  //initialize swiper when document ready
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: screen.width < 768 ? 2.75:7,
-    spaceBetween: 20,
-    freeMode: true,
-    autoplay: {
-      delay: 500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-};
-
 // form work 
 const fileInput = document.querySelector('#file-js-example input[type=file]');
 fileInput.onchange = () => {
@@ -105,6 +87,17 @@ ready(function () {
     pagination: true,
     effect: 'fade',
     loop: true,
-    autoplay: true
+    autoplay: true,
+    pauseOnHover: false
+  });
+  bulmaCarousel.attach('#brands-slider', {
+    pagination: false,
+    autoplaySpeed: 1000,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    infinite: true,
+    loop: true,
+    autoplay: true,
+    pauseOnHover: false
   });
 });
