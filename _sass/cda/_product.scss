@@ -45,6 +45,10 @@
         align-items: left;
         height: 8rem;
     }
+    .columns.is-mobile > .column.is-2{
+        width: 50% !important;
+    }
+    
 
 }
 

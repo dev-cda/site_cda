@@ -1,24 +1,28 @@
-title: CDA Distribuidora
+title:  CDA Distribuidora 
 subtitle: >-
-  Somos uma empresa potiguar que trabalha há mais de 20 anos para garantir o 
-  crescimento do nosso cliente. Nossa missão é levar: produtos de
-  qualidade de relevância nacional, garantindo o melhor do mercado, desde 1998. 
-  Temos o compromisso de atender as necessidades do pequeno, médio e grande
-  varejo com agilidade e eficiência, assim facilitando a conexão entre 
-  indústria e consumidor final.
+  Somos uma empresa genuinamente potiguar fundada em 1998. Desde os nossos
+  primeiros passos, atuamos no segmento de distribuição de produtos
+  industrializados e ano a ano vamos conquistando mais o mercado do pequeno,
+  médio e grande varejo do Rio Grande do Norte. Desde o nosso início, buscamos
+  melhorias contínuas da qualidade dos nossos serviços, mantendo sempre
+  investimentos em tecnologia, logística, e, principalmente, em nossos
+  colaboradores. Somos guiados pela missão delevar produtos de qualidade e
+  credibilidade ao mercado e trabalhamos incansavelmente para contribuir com o
+  crescimento dos nossos clientes.
 services:
   - title: Clientes
     text: >-
-        Presente em todo o estado do Rio Grande do Norte e 
-        com mais de 11.000 clientes cadastrados. 
+        Atendemos todo o estado do Rio Grande do Norte e contamos com mais
+          de 11.000 clientes cadastrados.
     icon: fas fa-handshake
-  - title: Fornecimento
+  - title: Lógistica
     text: >-
-        Acesso rápido e fácil, favorecendo uma ótima
-        logística de entrega. 
+        Atendemos todo o estado do Rio Grande do Norte e contamos com mais
+        de 11.000 clientes cadastrados.
     icon: fa-people-carry
   - title: Equipe
     text: >-
-        Time de marketing para auxiliar os clientes e
-        fornecedores. 
+        Temos uma equipe de mais de 500 colaboradores bem treinados que
+        trabalham com o objetivo de facilitar e impulsionar a conexão da
+        indústria com o consumidor final.
     icon: fa-users
