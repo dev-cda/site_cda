@@ -33,23 +33,19 @@
     box-shadow: none;
 }
 
-
-
+#category .columns.is-mobile > .column.is-2{
+    width: 20%;    
+ }
 
 @media (max-width: 768px) {
     
     #category .columns.is-mobile > .column.is-2{
-       width: 33%;    
+       width: 50%;    
     }
     .product .header-title{
         align-items: left;
         height: 8rem;
     }
-    .columns.is-mobile > .column.is-2{
-        width: 50% !important;
-    }
-    
-
 }
 
 @media (min-width: 1024px) {
