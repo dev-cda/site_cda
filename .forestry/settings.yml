@@ -10,9 +10,6 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: yml
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: directory
   path: _slides
   label: Slides
