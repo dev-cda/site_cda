@@ -1,22 +1,22 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/admin"
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Pages
+- type: directory
+  path: _data
+  label: Dados
   create: all
-- type: jekyll-posts
-  label: Posts
-  create: all
+  match: "**/*"
+  new_doc_ext: yml
 - type: directory
   path: _slides
   label: Slides
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/img
+public_path: "/assets/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
