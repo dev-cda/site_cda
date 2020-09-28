@@ -2,31 +2,17 @@
   <div class="container">
     <div class="columns is-mobile header-title">
       <div class="column">
-        <h1 class="title is-2 has-text-centered is-white">
+        <h1 class="title is-2 has-text-centered text-blue">
           {{ site.data.product.title }}
         </h1>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="columns is-mobile is-centered">
-        {% for title in site.categories %}
-        <div id="{{ title.folder }}" class="column has-text-centered category-header">
-          <h3 class="title-category" onclick="setcategory('{{ title.folder }}')">
-            {{ title.name }}
-          </h3>
-        </div>
-        {% endfor %}
       </div>
     </div>
     <div id="category">
       <div class="container">
         <div class="columns is-multiline is-mobile pt-5">
           {% for img in site.static_files %}
-            {% for category in site.categories %}
-              {% assign path = "img/" | append:category.folder  %}
-              {% if img.path contains path%}
-                <div class="column is-2 {{category.folder}}">
+              {% if img.path contains 'product'%}
+                <div class="column is-2">
                   <div class="card">
                     <div class="card-image">
                       <figure>
@@ -36,7 +22,6 @@
                   </div>
                 </div>
               {% endif %}
-            {% endfor %}
           {% endfor %}
         </div>
       </div>

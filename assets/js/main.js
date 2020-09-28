@@ -1,27 +1,3 @@
-// Products
-function setcategory(category) {
-  var container = document.getElementById("category");
-  var img = container.getElementsByClassName("column");
-  for (var i = 0; i < img.length; i++) {
-    img[i].style.display = "none";
-  }
-  var show = container.getElementsByClassName(category);
-  for (var i = 0; i < show.length; i++) {
-    show[i].style.display = "flex";
-  }
-  var category_header = document.getElementsByClassName("category-header");
-  for (var i = 0; i < category_header.length; i++) {
-    var tag_category = category_header[i].getElementsByTagName("h3")[0];
-    tag_category.classList.remove("category-active");
-  }
-  var active_category = document.getElementById(category);
-  var tag_category = active_category.getElementsByTagName("h3")[0];
-  tag_category.classList.add("category-active");
-}
-document.addEventListener("DOMContentLoaded", function () {
-  setcategory("alimentos-bebidas");
-});
-
 // Menu
 document.addEventListener("DOMContentLoaded", () => {
   let navbarBurger = document.querySelector(".navbar-burger");
@@ -86,30 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Scroll-down
-window.addEventListener("scroll", function(){
-  var header = this.document.querySelector(".hero-head");
-  header.classList.toggle("sticky", window.scrollY > 0);
-})
-
-// Brands slide 
-window.onload = function () {
-  //initialize swiper when document ready
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 7,
-    spaceBetween: 20,
-    freeMode: true,
-    autoplay: {
-      delay: 500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-};
-
 // form work 
 const fileInput = document.querySelector('#file-js-example input[type=file]');
 fileInput.onchange = () => {
@@ -118,3 +70,34 @@ fileInput.onchange = () => {
     fileName.textContent = fileInput.files[0].name;
   }
 }
+
+// header slide
+function ready(handler) {
+  if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
+    handler();
+  } else {
+    document.addEventListener('DOMContentLoaded', handler, false);
+  }
+}
+
+ready(function () {
+  bulmaCarousel.attach('.hero-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    pagination: true,
+    effect: 'fade',
+    loop: true,
+    autoplay: true,
+    pauseOnHover: false
+  });
+  bulmaCarousel.attach('#brands-slider', {
+    pagination: false,
+    autoplaySpeed: 1000,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    infinite: true,
+    loop: true,
+    autoplay: true,
+    pauseOnHover: false
+  });
+});

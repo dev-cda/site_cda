@@ -14,4 +14,4 @@ sass:
     style: compressed
 
 collections:
-  - categories
+  - slides

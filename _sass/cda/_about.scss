@@ -1,0 +1,20 @@
+.icon-blue{
+    color: #20376c;
+}
+
+.sub-title-about{
+    color: #20376c;
+}
+
+.service-text{
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .sub-title-about{
+        text-align: left;   
+    }
+    .service-text{
+        text-align: left;
+    }
+}

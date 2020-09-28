@@ -1,20 +1,12 @@
-<section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
-  <div class="hero-head">
-    {%- include nav.html -%}
+<section id="inicio" class="hero is-full has-carousel sticky">
+  <div class="hero-carousel">
+    {% for slide in site.slides %}
+      <div class='has-background is-active'>
+        <img class="is-background" src="{{ slide.img | relative_url }}" alt="" />
+        <div class="carousel-caption">
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="hero-body">
-    <div class="container has-text-left">
-      <h1 class="title is-1 has-text-white">
-        {{ site.data.header.title}}
-      </h1>
-      <h2 class=" has-text-light">
-        {{ site.data.header.subtitle}}
-      </h2>
-      <a href="#cliente">
-        <button class="button is-warning has-text-black-ter has-text-weight-bold">
-          {{ site.data.header.button}}
-       </button>
-      </a>
-    </div>
-  </div>
+  {%- include nav.html -%}
 </section>

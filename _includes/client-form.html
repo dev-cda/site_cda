@@ -1,20 +1,21 @@
-<section id="seja-cliente" class="section">
+<section id="seja-cliente" class="section" style="background-image: url('{{ site.data.client.img | relative_url }}')">
   <div class="container">
     <div class="columns is-mobile header-title">
       <div class="column">
-        <h1 class="title is-2 has-text-centered is-white">
+        <h1 class="title is-2 has-text-centered has-text-white">
           {{ site.data.client.title }}
         </h1>
       </div>
     </div>
 
     <div class="columns">
-      <div class="column">
-        <p class="title is-5">
+      <div class="column has-text-grey-light">
+        <p class="has-text-grey-light is-size-4">
           {{ site.data.client.subtitle }}
+          <br> <br>
         </p>
-        <p>
-          {{ site.data.client.text | markdownify }}
+        <p class="is-size-5">
+          {{ site.data.client.text }}
         </p>
       </div>
 
@@ -22,7 +23,7 @@
         <form name="client" method="POST" data-netlify="true">
           <div class="field-body">
             <div class="field">
-              <label>Nome</label>
+              <label class="has-text-grey-light">Nome</label>
               <p class="control is-expanded has-icons-left">
                 <input class="input" type="text" name="nome" placeholder="Name" />
                 <span class="icon is-small is-left">
@@ -31,7 +32,7 @@
               </p>
             </div>
             <div class="field">
-              <label>Email</label>
+              <label class="has-text-grey-light">Email</ class="has-text-grey-light">
               <p class="control is-expanded has-icons-left has-icons-right">
                 <input class="input" type="email" name="email" placeholder="Email" />
                 <span class="icon is-small is-left">
@@ -43,7 +44,7 @@
 
           <div class="field-body pt-4">
             <div class="field">
-              <label>Empresa</label>
+              <label class="has-text-grey-light">Empresa</label>
               <p class="control is-expanded has-icons-left">
                 <input class="input" type="text" name="empesa" placeholder="Name" />
                 <span class="icon is-small is-left">
@@ -52,7 +53,7 @@
               </p>
             </div>
             <div class="field">
-              <label>Telefone</label>
+              <label class="has-text-grey-light">Telefone</label>
               <p class="control is-expanded has-icons-left has-icons-right">
                 <input class="input" type="tel" name="telefone" placeholder="Email" />
                 <span class="icon is-small is-left">
@@ -63,21 +64,21 @@
           </div>
 
           <div class="field pt-4">
-            <label>Ramo da atividade</label>
+            <label class="has-text-grey-light">Ramo da atividade</label>
             <div class="control">
               <input class="input" type="text" name="atividade" placeholder="Digite seu nome" />
             </div>
           </div>
 
           <div class="field pt-4">
-            <label>Endereço completo</label>
+            <label class="has-text-grey-light">Endereço completo</label>
             <div class="control">
               <input class="input" type="text" name="endereco" placeholder="Digite seu nome" />
             </div>
           </div>
 
           <div class="field pt-4">
-            <label>Ponto de Referência</label>
+            <label class="has-text-grey-light">Ponto de Referência</label>
             <div class="control">
               <input class="input" type="text" name="referencia" placeholder="Digite seu nome" />
             </div>

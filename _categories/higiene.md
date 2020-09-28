@@ -1,4 +1,0 @@
----
-name: Higiene
-folder: higiene
----
