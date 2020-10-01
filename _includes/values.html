@@ -1,0 +1,21 @@
+<section id="valores" class="section mt-4">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-2 has-text-white has-text-centered has-text-weight-bold pb-6">
+            {{ site.data.values.title}}
+          </h1>
+        </div>
+      </div>
+      <div class="columns is-vcentered mb-4">
+        {% for service in site.data.values.services %}
+          <div class="column has-text-centered">
+            <i class="fas {{ service.icon }} fa-5x icon-blue has-text-white"></i>
+          </div>
+          <div class="column">
+              <p class="values-sub is-size-5 has-text-weight-bold ">{{ service.title }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,10 @@
+title:  Valores
+services:
+  - title: Excelência
+    icon: fas fa-medal
+  - title: Foco no cliente
+    icon: fas fa-headset
+  - title: Inovação
+    icon: fas fa-lightbulb
+  - title: Organização
+    icon: fa-users
