@@ -1,0 +1,14 @@
+<section id="mershan">
+    <div class="hero mershan-is-full has-carousel">
+        <h1 class="title is-2 has-text-centered is-blue has-text-weight-bold">
+            {{ site.data.merchan.title}}
+        </h1>
+        <div class="hero-carousel mt-6">
+          {% for slide in site.merchan %}
+            <div class='has-background is-active mt-4'>
+              <img class="is-background" src="{{ slide.img | relative_url }}" alt="" />
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+  </section>

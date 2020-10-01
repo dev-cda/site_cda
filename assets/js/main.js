@@ -62,15 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// form work 
-const fileInput = document.querySelector('#file-js-example input[type=file]');
-fileInput.onchange = () => {
-  if (fileInput.files.length > 0) {
-    const fileName = document.querySelector('#file-js-example .file-name');
-    fileName.textContent = fileInput.files[0].name;
-  }
-}
-
 // header slide
 function ready(handler) {
   if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
