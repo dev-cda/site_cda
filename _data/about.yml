@@ -24,9 +24,9 @@ services:
     text: >-
         Estamos localizados em uma área estratégica da grande Natal,
         favorecendo uma eficiente logística de entrega e recebimento.
-    icon: fa-people-carry
+    icon: fa-truck-moving
   - title: Merchandising 
     text: >-
         Contamos com uma equipe de merchandising treinada, criativa, e 
         preparada para fazer as vendas turbinarem no PDV.
-    icon: fa-users
+    icon: fa-people-carry 
