@@ -79,6 +79,7 @@ ready(function () {
     effect: 'fade',
     loop: true,
     autoplay: true,
+    duration: 3000,
     pauseOnHover: false
   });
   bulmaCarousel.attach('#brands-slider', {
