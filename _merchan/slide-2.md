@@ -1,3 +1,3 @@
 ---
-img: "assets/img/mershan-2.jpeg"
+img: "assets/img/merchan-2.jpeg"
 ---
