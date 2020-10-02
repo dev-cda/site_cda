@@ -72,7 +72,7 @@ function ready(handler) {
 }
 
 ready(function () {
-  bulmaCarousel.attach('.hero-carousel', {
+  bulmaCarousel.attach('#header-slide', {
     slidesToScroll: 1,
     slidesToShow: 1,
     pagination: true,
@@ -87,6 +87,15 @@ ready(function () {
     autoplaySpeed: 1000,
     slidesToScroll: 1,
     slidesToShow: 3,
+    infinite: true,
+    loop: true,
+    autoplay: true,
+    pauseOnHover: false
+  });
+  bulmaCarousel.attach('#merchan-slide', {
+    pagination: false,
+    autoplaySpeed: 1500,
+    slidesToScroll: 1,
     infinite: true,
     loop: true,
     autoplay: true,

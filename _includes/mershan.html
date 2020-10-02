@@ -3,7 +3,7 @@
         <h1 class="title is-2 has-text-centered is-blue has-text-weight-bold">
             {{ site.data.merchan.title}}
         </h1>
-        <div class="hero-carousel mt-6">
+        <div id="merchan-slide" class="hero-carousel mt-6">
           {% for slide in site.merchan %}
             <div class='has-background is-active mt-4'>
               <img class="is-background" src="{{ slide.img | relative_url }}" alt="" />
