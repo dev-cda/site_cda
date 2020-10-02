@@ -1,19 +1,18 @@
-#mershan{
+#merchan{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
-.mershan-is-full{
+.merchan-is-full{
     height: 70vh;
     width: 50vw;
 }
 
 @media (max-width: 768px){
-    .mershan-is-full{
+    .merchan-is-full{
         height: 40vh;
         width: 80vw;
-
     }
 }
