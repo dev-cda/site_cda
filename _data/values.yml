@@ -1,10 +1,10 @@
 title:  Valores
 services:
-  - title: Excelência
-    icon: fas fa-medal
+  - title: Ética 
+    icon: fas fa-balance-scale
   - title: Foco no cliente
     icon: fas fa-headset
-  - title: Inovação
+  - title: Criatividade
     icon: fas fa-lightbulb
-  - title: Organização
+  - title: Humildade
     icon: fa-users
