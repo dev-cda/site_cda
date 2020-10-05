@@ -94,11 +94,12 @@ ready(function () {
   });
   bulmaCarousel.attach('#merchan-slide', {
     pagination: false,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1000,
     slidesToScroll: 1,
     infinite: true,
     loop: true,
     autoplay: true,
-    pauseOnHover: false
+    duration: 1500
+
   });
 });
