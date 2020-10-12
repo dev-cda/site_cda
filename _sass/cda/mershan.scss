@@ -2,30 +2,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
-    user-select: none;
+    flex-direction: column;
 }
-.merchan-is-full{
-    height: 70vh;
-    width: 50vw;
-}
-
-@media (min-width:1024px){
-    .image.is-1by1, .image.is-square{
-        padding: 1%;
-    }
-}
+.carousel {
+    width: 600px;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    height: 600px;
+    margin-right: 10px;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+  }  
 
 @media (max-width: 768px){
     #merchan{
-        margin-bottom: -9rem;
+        margin-bottom: -230px;
     }
-    .merchan-is-full{
-        height: 100vh;
-        width: 90vw;
+    .carousel-cell-image{
+        margin-top: -165px;
     }
-    .image.is-1by1, .image.is-square{
-        margin-top: -80%;
+    .carousel{
+        width: 300px;
     }
+    .title.is-2.has-text-centered.is-blue.has-text-weight-bold.pt-6.merchan-title{
+        margin-bottom: -40px;
+    }
+
 }

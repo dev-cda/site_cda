@@ -91,14 +91,15 @@ ready(function () {
     autoplay: true,
     pauseOnHover: false
   });
-  bulmaCarousel.attach('#merchan-slide', {
-    pagination: false,
-    autoplaySpeed: 1000,
-    slidesToScroll: 1,
-    infinite: true,
-    loop: true,
-    autoplay: true,
-    duration: 1500
+});
 
-  });
+var elem = document.querySelector('.carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false
 });
