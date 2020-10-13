@@ -63,27 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // header slide
-function ready(handler) {
-  if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
-    handler();
-  } else {
-    document.addEventListener('DOMContentLoaded', handler, false);
-  }
-}
-
-ready(function () {
-  bulmaCarousel.attach('#brands-slider', {
-    pagination: false,
-    autoplaySpeed: 1000,
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    infinite: true,
-    loop: true,
-    autoplay: true,
-    pauseOnHover: false
-  });
-});
-
 var elem = document.querySelector('.carousel');
 var flkty = new Flickity( elem, {
   cellAlign: 'left',
@@ -103,6 +82,18 @@ var flkty_merchan = new Flickity( elem_merchan, {
   imagesLoaded: true,
   percentPosition: false,
   pageDots: false,
+  wrapAround: true
+});
+
+var elem_brands = document.querySelector('#brands .carousel');
+var flkty_brands = new Flickity( elem_brands, {
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false,
+  groupCells: 7,
   wrapAround: true
 });
 
