@@ -72,15 +72,6 @@ function ready(handler) {
 }
 
 ready(function () {
-  bulmaCarousel.attach('#header-slide', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    pagination: true,
-    effect: 'fade',
-    loop: true,
-    autoplay: true,
-    duration: 1400,
-  });
   bulmaCarousel.attach('#brands-slider', {
     pagination: false,
     autoplaySpeed: 1000,
@@ -95,11 +86,24 @@ ready(function () {
 
 var elem = document.querySelector('.carousel');
 var flkty = new Flickity( elem, {
-  // options
   cellAlign: 'left',
   contain: true,
   autoPlay: true,
   imagesLoaded: true,
   percentPosition: false,
-  pageDots: false
+  pageDots: false,
+  wrapAround: true
 });
+
+var elem_merchan = document.querySelector('#merchan .carousel');
+var flkty_merchan = new Flickity( elem_merchan, {
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false,
+  wrapAround: true
+});
+
+

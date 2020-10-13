@@ -1,24 +1,23 @@
-.brands{
+.brands {
   background-color: #f6f9f9;
   overflow: hidden;
 }
-#brands-slider .slider-item{
+#brands-slider .slider-item {
   width: 190px !important;
 }
 
-.brands-image{
-  height:auto;
-  width:auto;
+.brands-image {
+  height: auto;
+  width: auto;
 }
 
-@media (max-width: 768px){
-  .brands-image{
+@media (max-width: 768px) {
+  .brands-image {
     height: 120px;
     width: 120px;
   }
 
-  #brands-slider .slider-item{
+  #brands-slider .slider-item {
     width: 130px !important;
   }
-  
 }

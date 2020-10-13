@@ -1,24 +1,24 @@
-.icon-blue{
-    color: #20376c;
+.icon-blue {
+  color: #20376c;
 }
 
-.sub-title-about{
-    text-align: center;
-    color: #20376c;
+.sub-title-about {
+  text-align: center;
+  color: #20376c;
 }
 
-.service-text{
-    text-align: center;
+.service-text {
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
-    .sub-title-about{
-        text-align: left;
-    }
-    .service-text{
-        text-align: left;
-    }
-    .section{
-        padding: 4rem 1.5rem;
-    }
+  .sub-title-about {
+    text-align: left;
+  }
+  .service-text {
+    text-align: left;
+  }
+  .section {
+    padding: 4rem 1.5rem;
+  }
 }

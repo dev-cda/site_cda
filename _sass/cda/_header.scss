@@ -1,25 +1,62 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100vh;
+  margin-top: 40px;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100vh;
+}
+
+.carousel-cell-image {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 414px) {
+  .carousel-cell {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-.is-full{
-    margin-top: 4rem;
-    height: 94vh;
-}
-.has-background{
-    height: 94vh;
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+
+  .carousel-cell-image {
+    display: block;
+    height: 30vh;
+    width: 100vw;
+  }
 }
 
-.slider-navigation-next, .slider-navigation-previous{
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    color: white;
+@media (max-width: 375px) {
+  .carousel-cell {
+    width: 100%;
+    height: 300px;
+    margin-top: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+
+  .carousel-cell-image {
+    display: block;
+    height: 30vh;
+    width: 100vw;
+  }
 }
 
-@media (max-width: 768px){
-    .is-full{
-        margin-top: 3.2rem;
-        height: 30vh;
-    }
-}
