@@ -93,7 +93,7 @@ var flkty_brands = new Flickity( elem_brands, {
   imagesLoaded: true,
   percentPosition: false,
   pageDots: false,
-  groupCells: 7,
+  groupCells: 2,
   wrapAround: true
 });
 
