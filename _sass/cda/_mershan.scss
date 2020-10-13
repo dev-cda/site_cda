@@ -1,0 +1,43 @@
+#merchan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#merchan .carousel {
+  width: 600px;
+}
+
+#merchan .carousel-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#merchan .carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+#merchan .carousel-cell-image {
+  display: block;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  #merchan {
+    margin-bottom: -230px;
+  }
+  #merchan .carousel-cell-image {
+    margin-top: -165px;
+  }
+  #merchan .carousel {
+    width: 300px;
+  }
+  #merchan
+    .title.is-2.has-text-centered.is-blue.has-text-weight-bold.pt-6.merchan-title {
+    margin-bottom: -40px;
+  }
+}

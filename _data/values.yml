@@ -1,0 +1,10 @@
+title:  Valores
+services:
+  - title: Ética 
+    icon: fas fa-balance-scale
+  - title: Foco no cliente
+    icon: fas fa-headset
+  - title: Criatividade
+    icon: fas fa-lightbulb
+  - title: Humildade
+    icon: fa-users

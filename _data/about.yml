@@ -1,24 +1,32 @@
-title: CDA Distribuidora
+title:  Conheça a CDA
 subtitle: >-
-  Somos uma empresa potiguar que trabalha há mais de 20 anos para garantir o 
-  crescimento do nosso cliente. Nossa missão é levar: produtos de
-  qualidade de relevância nacional, garantindo o melhor do mercado, desde 1998. 
-  Temos o compromisso de atender as necessidades do pequeno, médio e grande
-  varejo com agilidade e eficiência, assim facilitando a conexão entre 
-  indústria e consumidor final.
+  A CDA Distribuidora é uma empresa potiguar, fundada em 1998, que atua no
+  segmento de distribuição de produtos industrializados. Desde o início dos
+  negócios, a empresa busca melhorias contínuas da qualidade dos seus serviços
+  de atendimento, investindo forte na área de tecnologia, logística e,
+  principalmente, em sua equipe. Graças à reconhecida excelência no ramo de
+  distribuição, ao longo dos anos a empresa vem conquistando mais o mercado do
+  pequeno, médio e grande varejo do Rio Grande do Norte.<br><br>
+
+  Atualmente, a CDA conta com cerca de 500 colaboradores, divididos entre os
+  setores administrativo, vendas e logística, que juntos, atuam com o objetivo
+  de impulsionar a conexão da indústria com o consumidor final. A empresa é
+  guiada pela missão de levar produtos de credibilidade ao mercado e trabalha
+  incansavelmente para contribuir com o crescimento da sua maior fortaleza:
+  seus clientes
 services:
   - title: Clientes
     text: >-
-        Presente em todo o estado do Rio Grande do Norte e 
-        com mais de 11.000 clientes cadastrados. 
+        Atendemos todo o estado do Rio Grande do Norte e possuímos uma
+        carteira com mais de 11.000 clientes cadastrados.
     icon: fas fa-handshake
-  - title: Fornecimento
+  - title: Lógistica
     text: >-
-        Acesso rápido e fácil, favorecendo uma ótima
-        logística de entrega. 
-    icon: fa-people-carry
-  - title: Equipe
+        Estamos localizados em uma área estratégica da grande Natal,
+        favorecendo uma eficiente logística de entrega e recebimento.
+    icon: fa-truck-moving
+  - title: Merchandising 
     text: >-
-        Time de marketing para auxiliar os clientes e
-        fornecedores. 
-    icon: fa-users
+        Contamos com uma equipe de merchandising treinada, criativa, e 
+        preparada para fazer as vendas turbinarem no PDV.
+    icon: fa-people-carry 

@@ -62,42 +62,39 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// form work 
-const fileInput = document.querySelector('#file-js-example input[type=file]');
-fileInput.onchange = () => {
-  if (fileInput.files.length > 0) {
-    const fileName = document.querySelector('#file-js-example .file-name');
-    fileName.textContent = fileInput.files[0].name;
-  }
-}
-
 // header slide
-function ready(handler) {
-  if (/complete|loaded|interactive/.test(document.readyState) && document.body) {
-    handler();
-  } else {
-    document.addEventListener('DOMContentLoaded', handler, false);
-  }
-}
-
-ready(function () {
-  bulmaCarousel.attach('.hero-carousel', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    pagination: true,
-    effect: 'fade',
-    loop: true,
-    autoplay: true,
-    pauseOnHover: false
-  });
-  bulmaCarousel.attach('#brands-slider', {
-    pagination: false,
-    autoplaySpeed: 1000,
-    slidesToScroll: 1,
-    slidesToShow: 3,
-    infinite: true,
-    loop: true,
-    autoplay: true,
-    pauseOnHover: false
-  });
+var elem = document.querySelector('.carousel');
+var flkty = new Flickity( elem, {
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false,
+  wrapAround: true
 });
+
+var elem_merchan = document.querySelector('#merchan .carousel');
+var flkty_merchan = new Flickity( elem_merchan, {
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false,
+  wrapAround: true
+});
+
+var elem_brands = document.querySelector('#brands .carousel');
+var flkty_brands = new Flickity( elem_brands, {
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: true,
+  imagesLoaded: true,
+  percentPosition: false,
+  pageDots: false,
+  groupCells: 2,
+  wrapAround: true
+});
+
+
