@@ -97,4 +97,28 @@ var flkty_brands = new Flickity( elem_brands, {
   wrapAround: true
 });
 
+// modal
+const modal =
+  document.querySelector('.modal');
+const btn =
+  document.querySelector('#btn')
+const close =
+  document.querySelector('.modal-close')
 
+btn.addEventListener('click',
+  function () {
+    modal.style.display = 'flex'
+  })
+
+close.addEventListener('click',
+  function () {
+    modal.style.display = 'none'
+  })
+
+window.addEventListener('click',
+  function (event) {
+    if (event.target.className ===
+      'modal-background') {
+      modal.style.display = 'none'
+    }
+  })

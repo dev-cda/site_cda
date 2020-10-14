@@ -18,8 +18,8 @@
           <div class="field-body">
             <div class="field">
               <label>Nome</label>
-              <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="nome" placeholder="Digite seu nome" />
+              <p class="control is-expanded has-icons-left" >
+                <input class="input" type="text" name="nome" placeholder="Digite seu nome" required/>
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -28,7 +28,7 @@
             <div class="field">
               <label>Email</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="email" name="email" placeholder="Digite seu e-mail" />
+                <input class="input" type="email" name="email" placeholder="Digite seu e-mail" required/>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -37,7 +37,7 @@
             <div class="field">
               <label>CPF</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="cpf" placeholder="Digite seu cpf" />
+                <input class="input" type="text" name="cpf" placeholder="Digite seu cpf" required/>
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@
             <div class="field">
               <label>Telefone</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="telefone" placeholder="Digite seu número" />
+                <input class="input" type="text" name="telefone" placeholder="Digite seu número"/>
                 <span class="icon is-small is-left">
                   <i class="fas fa-phone-alt"></i>
                 </span>
@@ -83,7 +83,7 @@
             <div class="field">
               <label>Celular</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="celular" placeholder="Digite seu número" />
+                <input class="input" type="text" name="celular" placeholder="Digite seu número" required/>
                 <span class="icon is-small is-left">
                   <i class="fas fa-mobile-alt"></i>
                 </span>
@@ -94,31 +94,31 @@
             <div class="field">
               <label>CEP</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="cep" placeholder="Digite seu CEP" />
+                <input class="input" type="text" name="cep" placeholder="Digite seu CEP" required />
               </p>
             </div>
             <div class="field">
               <label>Endereço</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="endereco" placeholder="Digite seu Endereço" />
+                <input class="input" type="text" name="endereco" placeholder="Digite seu Endereço" required/>
               </p>
             </div>
             <div class="field">
               <label>Cidade</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="cidade" placeholder="Digite sua cidade" />
+                <input class="input" type="text" name="cidade" placeholder="Digite sua cidade" required/>
               </p>
             </div>
             <div class="field">
               <label>Bairro</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="bairro" placeholder="Digite seu bairro" />
+                <input class="input" type="text" name="bairro" placeholder="Digite seu bairro" required/>
               </p>
             </div>
             <div class="field">
               <label>UF</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="estado" placeholder="Digite a sigla do seu Estado" />
+                <input class="input" type="text" name="estado" placeholder="Digite a sigla do seu Estado" required/>
               </p>
             </div>
           </div>
@@ -266,6 +266,33 @@
                 </label>
               </div>
             </div>
+          </div>
+          <div class="pt-3">
+            <label class="checkbox">
+              <input type="checkbox">
+               Eu concordo com os Termos e Condições
+            </label><a id="btn"> das minhas informações.</a>
+          </div>
+          <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="box">
+                <h1 class="title">Termos e Condições</h1>
+                <div class="content">
+                  <p class="is-family-monospace">
+                    Em observância a
+                    <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/Lei/L13709.htm" target="_blank">
+                    Lei 13.709/18
+                    </a>, Lei Geral de Proteção de
+                    Dados Pessoais,  DECLARO de forma livre, consciente, expressa
+                    e informada que ao enviar meu currículo estou CONCORDANDO
+                    com o uso e armazenamento dos dados enviados, para os fins
+                    declarados.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
           </div>
           <div class="field is-grouped pt-4">
             <div class="control">
