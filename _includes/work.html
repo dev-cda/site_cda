@@ -14,7 +14,7 @@
     </div>
     <div class="columns forms-center">
       <div class="column">
-        <form name="work" method="POST" data-netlify="true">
+        <form id="form-work" name="work" method="POST" data-netlify="true">
           <div class="field-body">
             <div class="field">
               <label>Nome</label>
@@ -37,7 +37,7 @@
             <div class="field">
               <label>CPF</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="cpf" placeholder="Digite seu cpf" required/>
+                <input id="cpf-mask"class="input" type="int" name="cpf" placeholder="Digite seu cpf" required/>
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <div class="field">
               <label>Celular</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="celular" placeholder="Digite seu número" required/>
+                <input id="phone-mask" class="input" type="text" name="celular" placeholder="Digite seu número" required/>
                 <span class="icon is-small is-left">
                   <i class="fas fa-mobile-alt"></i>
                 </span>
@@ -94,7 +94,7 @@
             <div class="field">
               <label>CEP</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="cep" placeholder="Digite seu CEP" required />
+                <input id="cep-mask" class="input" type="text" name="cep" placeholder="Digite seu CEP" required />
               </p>
             </div>
             <div class="field">
@@ -118,7 +118,7 @@
             <div class="field">
               <label>UF</label>
               <p class="control is-expanded">
-                <input class="input" type="text" name="estado" placeholder="Digite a sigla do seu Estado" required/>
+                <input class="input" type="text" name="uf" placeholder="Digite a sigla do seu Estado" required/>
               </p>
             </div>
           </div>
@@ -127,74 +127,75 @@
               <label>Cargo pretendido</label>
               <p class="control is-expanded">
               <div class="select">
-                <select name="role[]">
-                  <option value="Auxiliar Contábil">Auxiliar Contábil</option>
-                  <option value="Auxiliar de Escrita Fiscal">Auxiliar de Escrita Fiscal</option>
-                  <option value="Assistente Financeiro">Assistente Financeiro</option>
-                  <option value="Analista de contas">Analista de contas</option>
-                  <option value="Analista de Crédito">Analista de Crédito</option>
-                  <option value="Analista contábil">Analista contábil</option>
-                  <option value="Analista de estoque">Analista de estoque</option>
-                  <option value="Analista de RH">Analista de RH</option>
-                  <option value="Analista de sistemas">Analista de sistemas</option>
-                  <option value="Analista de transporte">Analista de transporte</option>
-                  <option value="Armazenista">Armazenista</option>
-                  <option value="Assistente Administrativo">Assistente Administrativo</option>
-                  <option value="Assistente comercial">Assistente comercial</option>
-                  <option value="Assistente de Controladoria">Assistente de Controladoria</option>
-                  <option value="Assistente de Segurança de Trabalho">Assistente de Segurança de Trabalho</option>
-                  <option value="Assistente de TI">Assistente de TI</option>
-                  <option value="Assistente de Vendas">Assistente de Vendas</option>
-                  <option value="Assistente Logistica">Assistente Logistica</option>
-                  <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
-                  <option value="Auxiliar de estoque">Auxiliar de estoque</option>
-                  <option value="Auxiliar de limpeza">Auxiliar de limpeza</option>
-                  <option value="Auxiliar de Logística">Auxiliar de Logística</option>
-                  <option value="Chefe de cobrança">Chefe de cobrança</option>
-                  <option value="Classificador de avaria">Classificador de avaria</option>
-                  <option value="Conferente de Carga e descarga">Conferente de Carga e descarga</option>
-                  <option value="Consultor de Vendas">Consultor de Vendas</option>
-                  <option value="Controller">Controller</option>
-                  <option value="Coordenador de Logistica">Coordenador de Logistica</option>
-                  <option value="Coordenador de Merchandising">Coordenador de Merchandising</option>
-                  <option value="Coordenador de suporte de vendas">Coordenador de suporte de vendas</option>
-                  <option value="Demonstrador de Mercadorias">Demonstrador de Mercadorias</option>
-                  <option value="Encarregado de contas a pagar">Encarregado de contas a pagar</option>
-                  <option value="Encarregado de manutenção">Encarregado de manutenção</option>
-                  <option value="Engenheiro de Produção">Engenheiro de Produção</option>
-                  <option value="Entregador de Mercadoria">Entregador de Mercadoria</option>
-                  <option value="Estoquista">Estoquista</option>
-                  <option value="Faturista">Faturista</option>
-                  <option value="Gerente Administrativo">Gerente Administrativo</option>
-                  <option value="Gerente de Compras">Gerente de Compras</option>
-                  <option value="Gerente de Logistica">Gerente de Logistica</option>
-                  <option value="Gerente de vendas">Gerente de vendas</option>
-                  <option value="Gerente Financeiro">Gerente Financeiro</option>
-                  <option value="Gerente Ti">Gerente Ti</option>
-                  <option value="Gerente de Recursos Humanos">Gerente de Recursos Humanos</option>
-                  <option value="Gerente de Departamento Pessoa">Gerente de Departamento Pessoal</option>
-                  <option value="Lavador de Veiculos">Lavador de Veiculos</option>
-                  <option value="Manobrista">Manobrista</option>
-                  <option value="Motorista de Caminhão85">Motorista de Caminhão</option>
-                  <option value="Operador de Empilhadeira">Operador de Empilhadeira</option>
-                  <option value="Operador de Telemarketing">Operador de Telemarketing</option>
-                  <option value="Porteiro">Porteiro</option>
-                  <option value="Programador de Aplicativos">Programador de Aplicativos</option>
-                  <option value="Programador e controlador de materiais">Programador e controlador de materiais</option>
-                  <option value="Recepcionista">Recepcionista</option>
-                  <option value="Repositor de Merc - comércio">Repositor de Merc - comércio</option>
-                  <option value="Repositor de Mercadoria">Repositor de Mercadoria</option>
-                  <option value="Supervisor Administrativo">Supervisor Administrativo</option>
-                  <option value="Supervisor de Atendimento ao Cliente">Supervisor de Atendimento ao Cliente</option>
-                  <option value="Supervisor de Vendas">Supervisor de Vendas</option>
-                  <option value="Supervisor Operacional">Supervisor Operacional</option>
-                  <option value="Técnico de A. U. de Informática(helpesk)">Técnico de A. U. de Informática(helpesk)
-                  </option>
-                  <option value="Técnico em Seguranca do Trabalho">Técnico em Seguranca do Trabalho</option>
-                  <option value="Técnico em Seguranca do Trabalho">Técnico em Seguranca do Trabalho</option>
-                  <option value="Vendedor Atacadista">Vendedor Atacadista</option>
-                  <option value="Vendedor Comercial">Vendedor Comercial</option>
-                  <option value="Engenheiro de produção">Engenheiro de produção</option>
+                <select name="cargo">
+                  <option value="141">Auxiliar Contábil</option>
+                  <option value="142">Auxiliar de Escrita Fiscal</option>
+                  <option value="143">Assistente Financeiro</option>
+                  <option value="161">Propagandista Zootecnista</option>
+                  <option value="162">Propagandista Veterinário</option>
+                  <option value="42">Analista de contas</option>
+                  <option value="43">Analista de Crédito</option>
+                  <option value="41">Analista contábil</option>
+                  <option value="44">Analista de estoque</option>
+                  <option value="45">Analista de RH</option>
+                  <option value="46">Analista de sistemas</option>
+                  <option value="47">Analista de transporte</option>
+                  <option value="48">Armazenista</option>
+                  <option value="49">Assistente Administrativo</option>
+                  <option value="50">Assistente comercial</option>
+                  <option value="51">Assistente de Controladoria</option>
+                  <option value="52">Assistente de Segurança de Trabalho</option>
+                  <option value="53">Assistente de TI</option>
+                  <option value="54">Assistente de Vendas</option>
+                  <option value="55">Assistente Logistica</option>
+                  <option value="56">Auxiliar Administrativo</option>
+                  <option value="57">Auxiliar de estoque</option>
+                  <option value="58">Auxiliar de limpeza</option>
+                  <option value="59">Auxiliar de Logística</option>
+                  <option value="60">Chefe de cobrança</option>
+                  <option value="61">Classificador de avaria</option>
+                  <option value="62">Conferente de Carga e descarga</option>
+                  <option value="63">Consultor de Vendas</option>
+                  <option value="64">Controller</option>
+                  <option value="65">Coordenador de Logistica</option>
+                  <option value="66">Coordenador de Merchandising</option>
+                  <option value="67">Coordenador de suporte de vendas</option>
+                  <option value="68">Demonstrador de Mercadorias</option>
+                  <option value="69">Encarregado de contas a pagar</option>
+                  <option value="70">Encarregado de manutenção</option>
+                  <option value="71">Engenheiro de Produção</option>
+                  <option value="72">Entregador de Mercadoria</option>
+                  <option value="73">Estoquista</option>
+                  <option value="74">Faturista</option>
+                  <option value="75">Gerente Administrativo</option>
+                  <option value="76">Gerente de Compras</option>
+                  <option value="77">Gerente de Logistica</option>
+                  <option value="78">Gerente de vendas</option>
+                  <option value="79">Gerente Financeiro</option>
+                  <option value="80">Gerente Ti</option>
+                  <option value="81">Gerente de Recursos Humanos</option>
+                  <option value="82">Gerente de Departamento Pessoal</option>
+                  <option value="83">Lavador de Veiculos</option>
+                  <option value="84">Manobrista</option>
+                  <option value="85">Motorista de Caminhão</option>
+                  <option value="86">Operador de Empilhadeira</option>
+                  <option value="87">Operador de Telemarketing</option>
+                  <option value="88">Porteiro</option>
+                  <option value="89">Programador de Aplicativos</option>
+                  <option value="90">Programador e controlador de materiais</option>
+                  <option value="91">Recepcionista</option>
+                  <option value="92">Repositor de Merc - comércio</option>
+                  <option value="93">Repositor de Mercadoria</option>
+                  <option value="94">Supervisor Administrativo</option>
+                  <option value="95">Supervisor de Atendimento ao Cliente</option>
+                  <option value="96">Supervisor de Vendas</option>
+                  <option value="97">Supervisor Operacional</option>
+                  <option value="98">Técnico de A. U. de Informática(helpesk)</option>
+                  <option value="99">Técnico em Seguranca do Trabalho</option>
+                  <option value="100">Técnico em Seguranca do Trabalho</option>
+                  <option value="101">Vendedor Atacadista</option>
+                  <option value="102">Vendedor Comercial</option>
+                  <option value="121">Engenheiro de produção</option>
                 </select>
               </div>
               </p>
@@ -203,12 +204,12 @@
               <label>Pretenção salarial</label>
               <p class="control is-expanded">
               <div class="select">
-                <select name="role[]">
-                  <option value="Entre R$1.000,00 a R$2.000,00">Entre R$1.000,00 a R$2.000,00</option>
-                  <option value="Entre R$2.001,00 a R$3.000,00">Entre R$2.001,00 a R$3.000,00</option>
-                  <option value="Entre R$3.001,00 a R$4.000,00">Entre R$3.001,00 a R$4.000,00</option>
-                  <option value="Entre R$4.001,00 a R$5.000,00">Entre R$4.001,00 a R$5.000,00</option>
-                  <option value="Acima de R$5.000,00">Acima de R$5.000,00</option>
+                <select name="salario">
+                  <option value="1" label="Entre R$1.000,00 a R$2.000,00"></option>
+                  <option value="2" label="Entre R$2.001,00 a R$3.000,00"></option>
+                  <option value="3" label="Entre R$3.001,00 a R$4.000,00"></option>
+                  <option value="4" label="Entre R$4.001,00 a R$5.000,00"></option>
+                  <option value="5" label="Acima de R$5.000,00"></option>
                 </select>
               </div>
               </p>
@@ -217,9 +218,9 @@
               <label>Está empregado atualmente?</label>
               <p class="control is-expanded">
               <div class="select">
-                <select name="role[]">
-                  <option value="Não">Não</option>
-                  <option value="Sim">Sim</option>
+                <select name="trabalhando">
+                  <option value="0">Não</option>
+                  <option value="1">Sim</option>
                 </select>
               </div>
               </p>
@@ -228,10 +229,10 @@
               <label>Pessoa com deficiência</label>
               <p class="control is-expanded">
               <div class="select">
-                <select name="role[]">
-                  <option value="Não tenho deficiência">Não tenho deficiência</option>
-                  <option value="Reabilitado pelo INSS">Reabilitado pelo INSS</option>
-                  <option value="Tenho deficiência">Tenho deficiência</option>
+                <select name="pcd">
+                  <option value="0">Não tenho deficiência</option>
+                  <option value="2">Reabilitado pelo INSS</option>
+                  <option value="1">Tenho deficiência</option>
                 </select>
               </div>
               </p>
@@ -241,7 +242,7 @@
             <div class="field">
               <label>Data de nascimento</label>
               <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" name="nascimento" placeholder="Digite sua data de nascimento" />
+                <input class="input" type="date" name="nascimento" placeholder="Digite sua data de nascimento" />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -251,7 +252,7 @@
               <label>Currículo em PDF</label>
               <div id="file-js-example" class="file has-name is-left">
                 <label class="file-label">
-                  <input class="file-input" type="file" name="resume">
+                  <input id="resume" class="file-input" type="file" name="resume" required>
                   <span class="file-cta">
                     <span class="file-icon">
                       <i class="fas fa-upload"></i>
@@ -261,7 +262,6 @@
                     </span>
                   </span>
                   <span class="file-name">
-                    meu_curriculo.pdf
                   </span>
                 </label>
               </div>
@@ -269,11 +269,11 @@
           </div>
           <div class="pt-3">
             <label class="checkbox">
-              <input type="checkbox">
+              <input type="checkbox" name="checkbox" onclick="toggle_button()" required>
                Eu concordo com os Termos e Condições
             </label><a id="btn"> das minhas informações.</a>
           </div>
-          <div class="modal">
+          <div id="terms" class="modal">
             <div class="modal-background"></div>
             <div class="modal-content">
               <div class="box">
@@ -294,9 +294,21 @@
             </div>
             <button class="modal-close is-large" aria-label="close"></button>
           </div>
+          <div id="loading" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <div class="box">
+                <div class="content">
+                  <p class="is-family-monospace">
+                    Enviando dados
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="field is-grouped pt-4">
             <div class="control">
-              <button type="submit" class="button is-link">Enviar</button>
+              <button id="button_send"type="button" onclick="send_form()" class="button is-link" disabled>Enviar</button>
             </div>
           </div>
         </form>
@@ -305,3 +317,4 @@
   </div>
   </div>
 </section>
+</div>
