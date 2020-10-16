@@ -1,5 +1,7 @@
 # CDA-website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6b0a6ce-3595-4a53-8491-9b8e501aad72/deploy-status)](https://app.netlify.com/sites/cdanatal/deploys)
+
 ## Instalando o Jekyll:
 
 Antes de instalarmos o Jekyll, precisamos instalar
