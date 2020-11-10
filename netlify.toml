@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "origin-list"
+    Access-Control-Allow-Origin = "https://cdadistribuidora.com.br"
