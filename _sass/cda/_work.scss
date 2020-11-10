@@ -1,0 +1,16 @@
+.forms-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height: 70vh;
+    width: 90vw;
+}
+
+@media (max-width: 768px) {
+    iframe{
+        height: 100vh;
+        width: 100vw;
+    }
+}
