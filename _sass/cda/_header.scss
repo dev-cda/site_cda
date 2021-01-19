@@ -6,12 +6,12 @@ html {
 //   background-color: #20376c;
 // }
 
-.carousel-cell {
+#inicio .carousel-cell {
   width: 100%;
   height: 100vh;
 }
 
-.carousel-cell-image {
+#inicio .carousel-cell-image {
   display: block;
   height: 100vh;
   width: 100vw;
@@ -20,7 +20,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .carousel-cell {
+  #inicio .carousel-cell {
     width: 100%;
     height: 300px;
     display: flex;
@@ -29,7 +29,7 @@ html {
     justify-content: center;
   }
 
-  .carousel-cell-image {
+  #inicio .carousel-cell-image {
     display: block;
     height: 222px;
     width: 100vw;
