@@ -1,12 +1,17 @@
 <section id="sobre" class="section mb-6 mt-4">
     <div class="container">
+      <h1 class="title is-2 has-text-centered is-blue has-text-weight-bold pb-3">
+        {{ site.data.about.title}}
+      </h1>
       <div class="columns">
         <div class="column">
-          <h1 class="title is-2 has-text-centered is-blue has-text-weight-bold pb-3">
-            {{ site.data.about.title}}
-          </h1>
-          <p class="subtitle has-text-centered has-text-justified pb-6">
-            {{ site.data.about.subtitle }}
+          <p class="subtitle has-text-centered has-text-justified">
+            {{ site.data.about.subtitle_left }}
+          </p>
+        </div>
+        <div class="column">
+          <p class="subtitle has-text-centered has-text-justified">
+            {{ site.data.about.subtitle_right }}
           </p>
         </div>
       </div>
@@ -16,7 +21,9 @@
             <i class="fas {{ service.icon }} fa-5x icon-blue"></i>
           </div>
           <div class="column">
-              <p class="is-size-5 has-text-weight-bold sub-title-about">{{ service.title }}</p>
+              <p class="is-size-5 has-text-weight-bold sub-title-about">
+                {{ service.title }}
+              </p>
               <p class="service-text">
                 {{ service.text}}
               </p>
