@@ -1,21 +1,36 @@
 <section id="valores" class="section mt-4">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <h1 class="title is-2 has-text-white has-text-centered has-text-weight-bold pb-6">
-            {{ site.data.values.title}}
-          </h1>
-        </div>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <h1 class="title is-3 has-text-white has-text-centered has-text-weight-bold pb-2">
+          {{ site.data.values.mission.title }}
+        </h1>
+        <p class="service-text has-text-centered is-size-6">{{ site.data.values.mission.value }}</p>
       </div>
-      <div class="columns is-vcentered mb-4">
-        {% for service in site.data.values.services %}
-          <div class="column has-text-centered">
-            <i class="fas {{ service.icon }} fa-5x icon-blue has-text-white"></i>
+      <div class="column">
+        <h1 class="title is-3 has-text-white has-text-centered has-text-weight-bold pb-2">
+          {{ site.data.values.vision.title }}
+        </h1>
+        <p class="service-text has-text-centered is-size-6">{{ site.data.values.vision.value }}</p>
+      </div>
+      <div class="column">
+        <h1 class="title is-3 has-text-white has-text-centered has-text-weight-bold pb-2">
+          {{ site.data.values.values.title }}
+        </h1>
+        <div class="columns pb-0 m-0">
+          <div class="column">
+      
+            <p class="service-text px-6  is-size-6">-{{ site.data.values.values.value1 }}</p>
+            <p class="service-text px-6 is-size-6">-{{ site.data.values.values.value3 }}</p>
+            <p class="service-text px-6 is-size-6">-{{ site.data.values.values.value5 }}</p>
           </div>
           <div class="column">
-              <p class="values-sub is-size-5 has-text-weight-bold ">{{ service.title }}</p>
+      
+            <p class="service-text is-size-6">-{{ site.data.values.values.value2 }}</p>
+            <p class="service-text is-size-6">-{{ site.data.values.values.value4 }}</p>
           </div>
-        {% endfor %}
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

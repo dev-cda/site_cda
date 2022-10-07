@@ -1,10 +1,13 @@
-title:  Valores
-services:
-  - title: Ética 
-    icon: fas fa-balance-scale
-  - title: Foco no cliente
-    icon: fas fa-headset
-  - title: Criatividade
-    icon: fas fa-lightbulb
-  - title: Humildade
-    icon: fa-users
+mission:
+  - title: Missão 
+    value: Fornecer produtos de bens de consumo com foco na distribuição numérica promovendo o crescimento do mercado varejista.
+vision:
+  - title: Visão
+    value: Tornar-se a melhor e mais eficiente distribuidora do estado do Rio Grande do Norte sem comprometer a qualidade de distribuição nos próximos 5 anos.
+values:
+  - title: Valores
+    value1: Compromisso
+    value2: Rapidez
+    value3: Confiança
+    value4: Parceria
+    value5: União
