@@ -1,21 +1,42 @@
-<section id="trabalhe-conosco" class="section">
-  <div class="container">
-    <div class="columns is-mobile header-title">
-      <div class="column">
-        <h1 class="title is-2 has-text-centered is-white">
-          {{ site.data.work.title }}
-        </h1>
-        </h1>
-        <p class="subtitle has-text-centered">
-          {{ site.data.work.subtitle }}
-        </h1>
-        </p>
+<section id="carreiras" class="section">
+  <h1 class="title is-2 has-text-centered is-white">
+    {{ site.data.work.title }}
+  </h1>
+  <div class="carreiras-container">
+    <div class="carreiras-image-container">
+      <img src="{{ "/assets/img/work/work-left.png" | relative_url }}" alt="" srcset="">
+    </div>
+    <div class="carreiras-links-container">
+      <div class="carreiras-links has-box-shadow">
+        <h3 class="has-box-shadow">{{ site.data.work.report-title }}</h3>
+        <div class="carreiras-links-content">
+          <p>
+            {{ site.data.work.report-subtitle }}
+          </p><br>
+          <p>
+            Base Legal: <br>
+            {{ site.data.work.report-law }}
+          </p>
+        </div>
+        <em><strong><a href="/assets/docs/report.pdf" target="_blank">{{ site.data.work.link }}</a></strong></em>
+      </div>
+      <div class="carreiras-links">
+        <h3 class="has-box-shadow">Canal de Ouvidoria</h3>
+        <div class="carreiras-links-content">
+          <p>
+            {{ site.data.work.ouvidoria-subtitle }}
+          </p>
+        </div>
+        
+        <em><strong><a href="/#contato">{{ site.data.work.link }}</a></strong></em>
       </div>
     </div>
-    <div class="columns forms-center">
-          <iframe src="https://oxar.appetiteapex.com/ords/f?p=115:4" frameborder="0"></iframe>
-    </div>
   </div>
+  
+  <div class="has-background-white">
+    <h1 class="title form-title has-text-centered is-blue">
+      {{ site.data.work.subtitle }}
+    </h1>
+    <iframe src="https://oxar.appetiteapex.com/ords/f?p=115:4" frameborder="0"></iframe>
   </div>
 </section>
-</div>
