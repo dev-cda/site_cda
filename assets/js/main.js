@@ -96,3 +96,45 @@ var flkty_brands = new Flickity(elem_brands, {
   groupCells: 2,
   wrapAround: true
 });
+
+buttons = document.getElementsByClassName('contact-button');
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      let form_name = buttons[i].innerText.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      document.getElementById('buttons-container').style.display = 'none';
+      document.getElementById(`form-${form_name}`).style.display = 'block';
+      document.getElementById('form-contact').innerHTML = `Preencha o formulário abaixo para enviar sua ${buttons[i].innerText}`;
+      if (form_name === 'denuncia') {
+        document.getElementById('form-contact').innerHTML = `Preencha o formulário abaixo para enviar sua ${buttons[i].innerText}. Caso prefira, entre em contato com <address><a href="tel:+5584996312468">(84) 9 9631-2468</a></address>`;
+      }
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.1});
+  
+    const fadeInSection = document.querySelectorAll('.fade-in-form').forEach(fade => {
+      observer.observe(fade);
+    })
+  });
+
+  let buttons_back = document.getElementsByClassName('btn-back-buttons');
+  
+  for (let i = 0; i < buttons_back.length; i++) {
+    buttons_back[i].addEventListener('click', function () {
+      document.getElementById('buttons-container').style.display = 'flex';
+      document.getElementById('form-duvida').style.display = 'none';
+      document.getElementById('form-sugestao').style.display = 'none';
+      document.getElementById('form-reclamacao').style.display = 'none';
+      document.getElementById('form-denuncia').style.display = 'none';
+      document.getElementById('form-contact').innerHTML = '{{ site.data.contact.text }}';
+      
+    });
+
+  }

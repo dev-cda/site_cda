@@ -16,3 +16,104 @@
   width: 100%;
   height: 100%;
 }
+
+.contact-button-icon {
+  width: 64px;
+  margin-right: 25px;
+}
+
+.fade-in-form {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.fade-in-form.visible {
+  opacity: 1;
+}
+
+.form-container {
+  display: none;
+}
+
+button.btn-back-buttons {
+  background-color: #BD0000;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  gap: 10px;
+  height: 95%;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  border-radius: 45px;
+  padding: 10px 25px;
+  height: 20%;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .05s;
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.15);
+  &:hover {
+    background-color: blue;
+  }
+}
+
+#duvida {
+  background-color: #007A0C;
+  color: white;
+  &:hover {
+    background-color: #005A08;
+  }
+}
+#sugestao {
+  background-color: #B8A500;
+  color: white;
+  &:hover {
+    background-color: #948500;
+  }
+
+}
+#reclamacao {
+  background-color: #D07000;
+  color: white;
+  &:hover {
+    background-color: #a75900;
+  }
+}
+#denuncia {
+  background-color: #BD0000;
+  color: white;
+  &:hover {
+    background-color: #7c0000;
+  }
+}
+
+.control {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+#denuncia-warning {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+address a {
+  color: #ff3a33;
+  &:hover {
+    color: #bd201b;
+  }
+}
+

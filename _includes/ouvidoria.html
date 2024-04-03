@@ -1,0 +1,97 @@
+<section id="ouvidoria" class="section contact-us">
+  <div class="container">
+    <div class="columns is-mobile header-title">
+      <div class="column">
+        <h1 class="title is-2 has-text-centered has-text-white">
+          {{ site.data.contact.title }}
+        </h1>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <p class="title is-5 has-text-centered has-text-white">
+          {{ site.data.contact.where }}
+        </p>
+        <div class="box iframe-rwd">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.842902595309!2d-35.21445968458844!3d-5.877692059520619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2f8ab1c239bb7%3A0xc6eb6181da5e82a6!2sCDA%20Distribuidora!5e0!3m2!1spt-BR!2sbr!4v1601060283667!5m2!1spt-BR!2sbr"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="column">
+        <p class="title is-5  has-text-centered has-text-white" id="form-contact">
+          {{ site.data.contact.text }}
+        </p>
+        <div id="buttons-container" class="buttons-container column ">
+          <button class="contact-button has-box-shadow" id="duvida">
+            <img class="contact-button-icon" src="{{ "/assets/img/icons/question-mark-bold.svg" | relative_url }}" alt="" srcset="">
+            Dúvida
+          </button>
+          <button class="contact-button" id="sugestao">
+            <img class="contact-button-icon" src="{{ "/assets/img/icons/chat-teardrop-text-bold.svg" | relative_url }}" alt="" srcset="">
+            Sugestão
+          </button>
+          <button class="contact-button" id="reclamacao">
+            <img class="contact-button-icon" src="{{ "/assets/img/icons/thumbs-down-bold.svg" | relative_url }}" alt="" srcset="">
+            Reclamação
+          </button>
+          <button class="contact-button" id="denuncia">
+            <img class="contact-button-icon" src="{{ "/assets/img/icons/megaphone-bold.svg" | relative_url }}" alt="" srcset="">
+            Denúncia
+          </button>
+        </div>
+        <!-- Incluir formulários da pasta contact_forms -->
+        {% include contact_forms/duvida.html %}
+        {% include contact_forms/sugestao.html %}
+        {% include contact_forms/reclamacao.html %}
+        {% include contact_forms/denuncia.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  buttons = document.getElementsByClassName('contact-button');
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      let form_name = buttons[i].innerText.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      document.getElementById('buttons-container').style.display = 'none';
+      document.getElementById(`form-${form_name}`).style.display = 'block';
+      document.getElementById('form-contact').innerHTML = `Preencha o formulário abaixo para enviar sua ${buttons[i].innerText}`;
+      if (form_name === 'denuncia') {
+        document.getElementById('form-contact').innerHTML = `Preencha o formulário abaixo para enviar sua ${buttons[i].innerText}. Caso prefira, entre em contato com <address><a class="" href="tel:+5584996312468">(84) 9 9631-2468</a></address>`;
+      }
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.1});
+  
+    const fadeInSection = document.querySelectorAll('.fade-in-form').forEach(fade => {
+      observer.observe(fade);
+    })
+  });
+
+  let buttons_back = document.getElementsByClassName('btn-back-buttons');
+  
+  for (let i = 0; i < buttons_back.length; i++) {
+    buttons_back[i].addEventListener('click', function () {
+      document.getElementById('buttons-container').style.display = 'flex';
+      document.getElementById('form-duvida').style.display = 'none';
+      document.getElementById('form-sugestao').style.display = 'none';
+      document.getElementById('form-reclamacao').style.display = 'none';
+      document.getElementById('form-denuncia').style.display = 'none';
+      document.getElementById('form-contact').innerHTML = '{{ site.data.contact.text }}';
+      
+    });
+
+  }
+
+</script>
