@@ -1,25 +1,16 @@
 ---
 layout: default
 ---
-
-<link rel="stylesheet" href="">
-<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
-
-{%- include nav.html -%}
-
 <section id="inicio"class="hero is-fullheight" style="background-image: url('{{ site.data.header.img | relative_url }}')">
-  
+  <div class="hero-head">
+    {%- include nav.html -%}
+  </div>
 
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-1">
-
-        404
+        Formulário enviado com sucesso!
       </h1>
-      <h2 class="subtitle">
-        Página não encontrada.
-      </h2>
     </div>
   </div>
 </section>
