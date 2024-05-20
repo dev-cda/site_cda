@@ -1,18 +1,159 @@
+#ouvidoria .container {
+  height: 300px;
+}
+
 .contact-us {
   background-color: #233265;
+  padding: 0;
+  padding-top: 0.2rem;
+}
+
+.ouvidoria-title {
+  position: relative;
+  padding-top: 1.5rem;
+  top: 2.5rem;
 }
 
 .iframe-rwd {
+  top: 40px;
   position: relative;
-  padding-bottom: 65.25%;
-  padding-top: 30px;
-  height: 0;
+  margin: 0 auto;
+  height: 300px;
+  width: 100%;
   overflow: hidden;
+  border-radius: 64px;
 }
 .iframe-rwd iframe {
   position: absolute;
+  padding: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+
+.ouvidoria-container {
+  max-width: 100%;
+  padding: 190px 13% 20px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2 colunas de tamanho igual */
+  justify-items: center;
+  gap: 20px;
+
+}
+
+.button-contact {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  height: 470px;
+  gap: 20px;
+  color: #233265;
+  transition: 0.15s;
+}
+
+.button-contact p {
+  font-size: 11pt;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.button-title {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.button-contact:hover {
+  background-color: #233265;
+  color: white !important;
+  transition: 0.15s;
+  cursor: pointer;
+
+  .button-contact-image {
+    fill: white;
+  }
+  & p {
+    color: white;
+
+  }
+}
+
+.button-contact-image {
+  fill: #233265;
+  width: 100px;
+  height: 100px;
+}
+
+
+// forms styles
+
+#modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+  transition: 3s;
+}
+
+.form-container {
+  display: none;
+}
+.field span {
+  color: red;
+}
+.label {
+  color: #233265;
+}
+
+.form-cda-title {
+  color: #233265;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-cda {
+  width: 50%;
+  background-color: white;
+  border-radius: 43px;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1350px) {
+  .form-cda {
+    width: 80%;
+  }
+
+  .columns {
+    margin-right: 0;
+  }  
+  
+  .ouvidoria-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-cda {
+    width: 100%;
+  }
+
+  .ouvidoria-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} 
