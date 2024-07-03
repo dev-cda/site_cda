@@ -10,4 +10,20 @@ footer {
   .buttons {
     justify-content: flex-start;
   }
+
+  #footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 1224px) {
+
+  #footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
 }
