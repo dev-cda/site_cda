@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.is-blue{
+  // old
+  // color: #233265;
+  
+  // new
+  color: #233265;
+
+}
+
+@import
+  "cda/navbar",
+  "cda/header",
+  "cda/about",
+  "cda/product",
+  "cda/brands",
+  "cda/client",
+  "cda/footer",
+  "cda/contact",
+  "cda/values",
+  "cda/mershan",
+  "cda/work",
+  "cda/transparency-report"
+;

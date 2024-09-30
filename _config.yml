@@ -1,0 +1,20 @@
+email: suporte@cdanatal.com.br
+description: "Presente em todo o estado do Rio Grande do Norte e com mais de 
+11.000 clientes cadastrados, a CDA está localizada em uma área nobre e 
+privilegiada na grande Natal, com acesso fácil e rápido, favorecendo uma ótima 
+logística de entrega e recebimento de mercadorias. Marcas de credibilidade para 
+todo o Rio Grande do Norte"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cdanatal.com.br/" 
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+    style: compressed
+
+collections:
+  - slides
+  - merchan

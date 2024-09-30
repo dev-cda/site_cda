@@ -1,0 +1,15 @@
+#valores {
+  background-color: #233265;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .values-sub {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+.value-item {
+  white-space: nowrap;
+}

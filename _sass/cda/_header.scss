@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// #inicio{
+//   background-color: #233265;
+// }
+
+#inicio .carousel-cell {
+  width: 100%;
+}
+
+#inicio #navbar-index {
+  max-width: 100vw;
+}
+
+#inicio .carousel-cell-image {
+  display: block;
+  width: 100vw;
+  padding-top: 4rem;
+  background-color: #233265;
+}
+
+@media (max-width: 768px) {
+  #inicio .carousel-cell {
+    width: 100%;
+    display: flex;
+    // margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #inicio .carousel-cell-image {
+    display: block;
+    width: 100vw;
+    padding-top: 1rem;
+    background-color: #233265;
+  }
+}
+

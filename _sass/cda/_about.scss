@@ -1,0 +1,24 @@
+.icon-blue {
+  color: #233265;
+}
+
+.sub-title-about {
+  text-align: center;
+  color: #233265;
+}
+
+.service-text {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .sub-title-about {
+    text-align: left;
+  }
+  .service-text {
+    text-align: left;
+  }
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}

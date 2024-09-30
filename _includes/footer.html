@@ -1,0 +1,42 @@
+<footer>
+    <div class="section">
+    <div class="container">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+                <a class="title is-4 is-blue has-text-centered" href="#">
+                  {{ site.data.footer.title }}
+                </a>
+            </div>
+          </div>
+          <div id="footer-nav" class="level-right">
+            {% for item in site.data.navigation %}
+                <a href="{{ site.baseurl }}{{ item.link }}" class="level-item is-blue">
+                    {{ item.name }}
+                </a>
+             {% endfor %}
+          </div>
+        </div>
+        <hr>
+        <div class="columns">
+          <div class="column">
+            <div class="buttons">
+              {% for item in site.data.footer.social%}
+                <a class="button" href="{{ item.link }}" target="_blank">
+                    <i class="fab {{ item.icon }} is-blue"></i>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="column has-text-centered has-text-right-tablet">
+            <p class="subtitle is-6 is-blue">
+              {{ site.data.footer.copyright }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="{{ "/assets/js/main.js" |  relative_url }}"></script>
+<script src="{{ "/assets/js/bulma-carousel.min.js" |  relative_url }}"></script>

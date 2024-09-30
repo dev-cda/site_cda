@@ -1,0 +1,29 @@
+#brands .carousel {
+  background-color: #f6f9f9;
+  padding: 20px 0;
+}
+
+#brands .carousel-cell {
+  padding-left: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+#brands .carousel-cell-image {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #brands .carousel-cell {
+    width: 120px;
+    height: 120px;
+  }
+  #brands .carousel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #brands .flickity-button{
+    display: none;
+  }
+}

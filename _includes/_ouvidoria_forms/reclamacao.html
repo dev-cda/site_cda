@@ -1,0 +1,35 @@
+<div id="form-reclamacao" class="form-container fade-in-form form-cda">
+    <div style="display: flex; justify-content:flex-end">
+      <button type="button" class="delete is-large" onclick="closeForm()">
+        Fechar
+      </button>
+    </div>
+      <h1 class="form-cda-title">
+        Reclamação
+      </h1>
+      <form name="reclamacao" method="POST" data-netlify="true" action="/success">
+          <div class="field-body pb-4">
+            <div class="field">
+              <label class="label">Nome</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" name="name" placeholder="Informe seu nome (opcional)" >
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              
+            </div>
+          </div>  
+          <div class="field">
+            <label class="label ">Reclamação<span> *</span></label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Digite sua reclamação" name="message" required></textarea>
+            </div>
+          </div>
+          <div class="field is-grouped" style="justify-content: flex-end">
+            <div class="control">
+              <button type="submit" class="button is-link">Enviar</button>
+            </div>
+          </div>
+      </form>
+  </div>

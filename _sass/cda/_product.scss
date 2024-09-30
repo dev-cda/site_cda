@@ -1,0 +1,36 @@
+#produtos {
+  background-color: #d5dce4;
+}
+
+.title-product {
+  font-weight: bold;
+  color: #0e2f69;
+}
+
+.card {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#category .columns.is-mobile > .column.is-2 {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  #category .columns.is-mobile > .column.is-2 {
+    width: 50%;
+  }
+  .product .header-title {
+    align-items: left;
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-header {
+    flex: none;
+    width: 16%;
+    padding-bottom: 20px;
+  }
+}
+
