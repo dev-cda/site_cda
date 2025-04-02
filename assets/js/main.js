@@ -74,17 +74,6 @@ var flkty = new Flickity(elem, {
   wrapAround: true
 });
 
-var elem_merchan = document.querySelector('#merchan .carousel');
-var flkty_merchan = new Flickity(elem_merchan, {
-  cellAlign: 'left',
-  contain: true,
-  autoPlay: true,
-  imagesLoaded: true,
-  percentPosition: false,
-  pageDots: false,
-  wrapAround: true
-});
-
 var elem_brands = document.querySelector('#brands .carousel');
 var flkty_brands = new Flickity(elem_brands, {
   cellAlign: 'left',
