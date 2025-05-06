@@ -7,18 +7,25 @@
   padding-left: 15px;
   width: 150px;
   height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #brands .carousel-cell-image {
-  width: auto;
-  height: auto;
+  background-color: white;
+  width: 100%;
+  height: 95%;
   border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   #brands .carousel-cell {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 95px;
   }
   #brands .carousel {
     padding-top: 10px;
