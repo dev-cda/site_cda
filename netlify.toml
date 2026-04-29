@@ -8,3 +8,7 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[build]
+  command = "bundle install"
+  environment = { RUBY_VERSION = "3.2.2" }
